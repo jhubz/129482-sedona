@@ -2,133 +2,117 @@
 <html lang="ru">
 
   <head>
-
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-
   </head>
 
   <body>
 
     <header class="page-header">
       <h1 class="visually-hidden">Городок Седона в Аризоне</h1>
-
       <div class="page-header__logo">
-        <img src="http://placehold.it/100x100">
+        <img src="http://placehold.it/100x100" alt="Логотип Седоны" width="100" height="100">
       </div>
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-
-        <div class="main-nav__container">
-
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-          </ul>
-
-        </div>
-
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
       </nav>
 
       <div class="page-header__photo">
-        <img src="http://placehold.it/200x200">
       </div>
-
     </header>
 
-    <section class="features">
-      <h2 class="visually-hidden">Причины, по которым стоит посетить Седону</h2>
-
-      <div class="features__header">
-        <p class="features__slogan">Седона - небольшой городок в Аризона, заслуживающий большего!</p>
-        <p class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <section class="hotel-features">
+      <div class="hotel-features__header">
+        <h2 class="hotel-features__title">Седона - небольшой городок в Аризона, заслуживающий большего!</h2>
+        <p class="hotel-features__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
-      <ul class="features__list">
+      <div class="hotel-features__list">
+        <div class="hotel-feature  hotel-feature--photo">
 
-        <li class="features__item  features__item--photo">
-          <div class="features__container">
-            <p class="features__name">Настоящий городок</p>
-            <p class="features__number">-№1-</p>
-            <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="photo">
-            <img src="http://placehold.it/300x300">
+          <div class="hotel-feature__text">
+            <p class="hotel-feature__name">Настоящий городок</p>
+            <p class="hotel-feature__number">-№1-</p>
+            <p class="hotel-feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
 
-          <ul class="services">
+          <div class="hotel-feature__photo">
+            <img src="http://placehold.it/300x300" alt="Городок Седона" width="300" height="300">
+          </div>
 
-            <li class="services__item">
-              <p class="services__name">Жилье</p>
-              <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <ul class="hotel-services">
+            <li class="hotel-services__item">
+              <span class="hotel-services__icon"></span>
+              <p class="hotel-services__name">Жилье</p>
+              <p class="hotel-services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
 
-            <li class="services__item">
-              <p class="services__name">Сувениры</p>
-              <p class="services__description">Не только китайского, но и местного производства!</p>
+            <li class="hotel-services__item">
+              <span class="hotel-services__icon"></span>
+              <p class="hotel-services__name">Сувениры</p>
+              <p class="hotel-services__description">Не только китайского, но и местного производства!</p>
             </li>
 
-            <li class="services__item">
-              <p class="services__name">Еда</p>
-              <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="hotel-services__item">
+              <span class="hotel-services__icon"></span>
+              <p class="hotel-services__name">Еда</p>
+              <p class="hotel-services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-
           </ul>
+        </div>
 
-        </li>
-
-        <li class="features__item  features__item--photo">
-          <div class="features__container">
-            <p class="features__name">Там есть мост дьявола</p>
-            <p class="features__number">-№2-</p>
-            <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="hotel-feature  hotel-feature--photo">
+          <div class="hotel-feature__text">
+            <p class="hotel-feature__name">Там есть мост дьявола</p>
+            <p class="hotel-feature__number">-№2-</p>
+            <p class="hotel-feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="photo">
-            <img src="http://placehold.it/300x300">
+          <div class="hotel-feature__photo">
+            <img src="http://placehold.it/300x300" alt="Мост дьявола" width="300" height="300">
           </div>
-        </li>
+        </div>
 
-        <li class="features__item">
-          <div class="features__container">
-            <p class="features__name">Небольшая площадь</p>
-            <p class="features__number">-№3-</p>
-            <p class="features__description">Все достопримечательности находятся очень близко</p>
+        <div class="hotel-feature">
+          <div class="hotel-feature__text">
+            <p class="hotel-feature__name">Небольшая площадь</p>
+            <p class="hotel-feature__number">-№3-</p>
+            <p class="hotel-feature__description">Все достопримечательности находятся очень близко</p>
           </div>
-        </li>
+        </div>
 
-        <li class="features__item">
-          <div class="features__container">
-            <p class="features__name">Красивая дорога</p>
-            <p class="features__number">-№4-</p>
-            <p class="features__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+        <div class="hotel-feature">
+          <div class="hotel-feature__text">
+            <p class="hotel-feature__name">Красивая дорога</p>
+            <p class="hotel-feature__number">-№4-</p>
+            <p class="hotel-feature__description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </div>
-        </li>
+        </div>
 
-        <li class="features__item">
-          <div class="features__container">
-            <p class="features__name">Мало туристов</p>
-            <p class="features__number">-№5-</p>
-            <p class="features__description">Большинство еде в Гранд Каньон и толпится там</p>
+        <div class="hotel-feature">
+          <div class="hotel-feature__text">
+            <p class="hotel-feature__name">Мало туристов</p>
+            <p class="hotel-feature__number">-№5-</p>
+            <p class="hotel-feature__description">Большинство еде в Гранд Каньон и толпится там</p>
           </div>
-        </li>
-
-      </ul>
+        </div>
+      </div>
     </section>
 
-    <section class="offer">
-
-      <h2 class="visually-hidden">Поиск гостницы</h2>
-      <p class="offer__title">Заинтересовались?</p>
-      <p class="offer__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="offer__find  btn" href="#">Найти гостиницу</a>
-
+    <section class="hotel-offer">
+      <h2 class="hotel-offer__title">Заинтересовались?</h2>
+      <p class="hotel-offer__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="hotel-offer__find  btn" href="#">Найти гостиницу</a>
     </section>
 
-    <div class="map">
-      <img src="http://placehold.it/200x200">
+    <div class="hotel-map">
+      <img src="http://placehold.it/300x300" alt="Карта Седоны" width="300" height="300">
     </div>
 
     <footer class="page-footer">
@@ -141,9 +125,7 @@
       </ul>
 
       <p class="page-footer__copyright">Разработано <a href="http://htmlacademy.ru">Html academy</a></p>
-
     </footer>
 
   </body>
-
 </html>
