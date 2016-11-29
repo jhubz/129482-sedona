@@ -31,37 +31,37 @@
     </header>
 
     <section class="hotel-photos">
-      <div class="hotel-photos__header">
-        <h2 class="hotel-photos__title">Фото и видео</h2>
-        <p class="hotel-photos__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+      <div class="content-header">
+        <h2 class="content-header__title">Фото и видео</h2>
+        <p class="content-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
       </div>
 
       <article class="hotel-photo">
         <img class="hotel-photo__image" src="http://placehold.it/200x200" alt="Неродные просторы" width="200" height="200">
         <p class="hotel-photo__description">Неродные просторы</p>
         <p class="hotel-photo__author">Автор фото: Борис</p>
-        <p class="hotel-photo__likes">1350</p>
+        <a class="hotel-photo__likes" href="#">1350</a>
       </article>
 
       <article class="hotel-photo">
         <img class="hotel-photo__image" src="http://placehold.it/200x200" alt="Местная растительность" width="200" height="200">
         <p class="hotel-photo__description">Местная растительность</p>
         <p class="hotel-photo__author">Автор фото: Сергей</p>
-        <p class="hotel-photo__likes">143</p>
+        <a class="hotel-photo__likes" href="#">143</a>
       </article>
 
       <article class="hotel-photo">
         <img class="hotel-photo__image" src="http://placehold.it/200x200" alt="Дорога на север" width="200" height="200">
         <p class="hotel-photo__description">Дорога на север</p>
         <p class="hotel-photo__author">Автор фото: Петр</p>
-        <p class="hotel-photo__likes">96</p>
+        <a class="hotel-photo__likes" href="#">96</a>
       </article>
 
       <article class="hotel-photo">
         <img class="hotel-photo__image" src="http://placehold.it/200x200" alt="Мост дьявола" width="200" height="200">
         <p class="hotel-photo__description">Мост Дьявола</p>
         <p class="hotel-photo__author">Автор фото: Антон</p>
-        <p class="hotel-photo__likes">254</p>
+        <a class="hotel-photo__likes" href="#">254</a>
       </article>
     </section>
 
@@ -73,8 +73,11 @@
 
       <div class="hotel-video">
         <img src="http://placehold.it/200x200" alt="Видеопрезентация Седоны" width="200" height="200">
+        <div class="hotel-video__scroll">
+          <div class="hotel-video__scroll-line"></div>
+          <div class="hotel-video__scroll-toggle"></div>
+        </div>
         <div class="hotel-video__controls">
-          <div class="hotel-video__scroll"></div>
           <button class="hotel-video__replay"></button>
           <button class="hotel-video__subtitles"></button>
           <button class="hotel-video__fullScreen"></button>
