@@ -9,7 +9,6 @@
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Городок Седона в Аризоне</h1>
       <div class="page-header__logo">
         <a href="index.html">
           <img src="http://placehold.it/100x100" alt="Логотип Седоны" width="100" height="100">
@@ -54,10 +53,14 @@
           <legend class="hotel-review-form__legend">Контактная информация:</legend>
 
           <label class="hotel-review-form__text-field-label" for="phone-id">Контактный телефон*:</label>
-          <input class="hotel-review-form__text-field" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
+          <div class="hotel-review-form__field-container  hotel-review-form__field-container--phone">
+            <input class="hotel-review-form__text-field" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
+          </div>
 
           <label class="hotel-review-form__text-field-label" for="email-id">Электронная почта*:</label>
-          <input class="hotel-review-form__text-field" id="email-id" type="email" name="email" placeholder="Введите e-mail">
+          <div class="hotel-review-form__field-container  hotel-review-form__field-container--email">
+            <input class="hotel-review-form__text-field" id="email-id" type="email" name="email" placeholder="Введите e-mail">
+          </div>
         </fieldset>
 
         <fieldset class="hotel-review-form__container">
