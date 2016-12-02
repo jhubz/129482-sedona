@@ -1,3 +1,24 @@
-body {
-  background: blue;
-}
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/scaffolding.scss";
+
+@import "blocks/content-header.scss";
+@import "blocks/hotel-feature.scss";
+@import "blocks/hotel-features.scss";
+@import "blocks/hotel-map.scss";
+@import "blocks/hotel-offer.scss";
+@import "blocks/hotel-photo.scss";
+@import "blocks/hotel-photos.scss";
+@import "blocks/hotel-review.scss";
+@import "blocks/hotel-review-form.scss";
+@import "blocks/hotel-services.scss";
+@import "blocks/hotel-video.scss";
+@import "blocks/hotel-videos.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-container.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/social-link.scss";
+@import "blocks/social-links.scss";

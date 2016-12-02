@@ -1,0 +1,102 @@
+.hotel-review-form {
+  padding: 0 20px 40px 20px;
+
+  text-align: center;
+
+  &__container {
+    padding: 25px 0;
+
+    text-align: left;
+
+    border: none;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+    text-align: center;
+  }
+
+  &__text-field-label {
+    @include set-font ($base-font-size, $base-font-size*26/14);
+    font-family: PTsans, sans-serif;
+  }
+
+  &__text-field {
+  }
+
+  &__field-container {
+    margin-bottom: 20px;
+
+    &--phone {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 45px;
+        height: 45px;
+
+        background: #e6e6e6 url(../img/icon-phone.svg) no-repeat center;
+      }
+    }
+
+    &--email {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 45px;
+        height: 45px;
+
+        background: #e6e6e6 url(../img/icon-mail.svg) no-repeat center;
+      }
+    }
+  }
+
+  &__text-field {
+    padding: 15px;
+
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+  }
+
+  &__comment {
+
+    background-color: #f2f2f2;
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 15px;
+
+    @include set-font ($base-font-size*1.5, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+
+    background-color: $add-bg-color;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: #94b9d2;
+    }
+  }
+}

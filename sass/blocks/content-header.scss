@@ -1,0 +1,15 @@
+.content-header {
+  padding: 46px 20px 32px 20px;
+
+  @include set-font ($base-font-size, $base-font-size*26/14);
+  font-family: PTsans, sans-serif;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 42px;
+
+    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+  }
+}
+

@@ -1,0 +1,22 @@
+.hotel-videos {
+  text-align: center;
+
+  outline: 1px solid green;
+
+  &__header {
+    padding: 40px 25px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+  }
+
+  &__description {
+
+    @include set-font ($base-font-size, $base-font-size*24/14);
+    font-family: PTsans, sans-serif;
+  }
+}

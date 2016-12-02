@@ -1,0 +1,52 @@
+.main-nav {
+
+  &__list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    @include set-font ($base-font-size*18/14, $base-font-size*40/14);
+    font-family: PTsansBold, sans-serif;
+
+    &--current {
+      cursor: pointer;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+
+      background-color: $add-bg-color;
+      color: #ffffff;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #669ec0;
+      }
+      &:active {
+        background-color: #5496bd;
+        color: #94b9d2;
+      }
+    }
+  }
+
+  &__toggle {
+    margin: 8px 0 8px 240px;
+    width: 40px;
+    height: 40px;
+
+    font-size: 0;
+
+    background-color: $add-bg-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+
+
+

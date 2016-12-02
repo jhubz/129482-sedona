@@ -1,0 +1,37 @@
+.page-footer {
+  padding: 40px 85px 23px 85px;
+
+  @include set-font ($base-font-size, $base-font-size*26/14);
+  font-family: PTsans, sans-serif;
+  text-align: center;
+
+  outline: 1px solid green;
+
+  &__hashtag {
+    margin-bottom: 42px;
+
+    @include set-font ($base-font-size*1.5, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+  }
+
+  &__copyright {
+    display: inline-block;
+
+    vertical-align: middle;
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+
+      font-size: 0;
+      vertical-align: top;
+
+      background: url(../img/htmlacademy.svg) no-repeat center;
+    }
+  }
+}
+
+
+
+

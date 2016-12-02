@@ -1,0 +1,58 @@
+.hotel-feature {
+  text-align: center;
+
+  outline: 1px solid green;
+
+  &__text {
+    padding: 33px 35px;
+
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+
+    &--photo {
+      padding: 46px 20px;
+
+      background-color: $add-bg-color;
+      color: $base-bg-color;
+    }
+  }
+
+  &__name {
+    margin-bottom: 20px;
+
+    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
+    font-family: PTsansBold, sans-serif;
+  }
+
+  &__number {
+    margin-bottom: 26px;
+  }
+
+  &__photo {
+    height: 260px;
+
+    &--big {
+      overflow: hidden;
+
+      img {
+        height: 260px;
+        width: auto;
+        margin-left: -100px;
+      }
+    }
+
+    &--small {
+      overflow: hidden;
+
+      img {
+        height: 320px;
+        width: auto;
+        margin-top: -60px;
+      }
+    }
+  }
+}
+
+
+
+
