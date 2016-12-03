@@ -45,7 +45,7 @@
 
   &--phone {
     position: relative;
-    
+
     margin-bottom: 10px;
 
     &::after {
@@ -87,6 +87,6 @@
   padding: 15px;
 
   font: bold 21px / 26px $base-font;
-  
+
   @include btn;
 }
