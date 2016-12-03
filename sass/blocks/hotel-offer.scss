@@ -1,0 +1,38 @@
+.hotel-offer {
+  padding: 33px 20px 50px 20px;
+
+  font: 14px / 24px $base-font;
+  text-align: center;
+
+  outline: 1px solid green;
+}
+
+.hotel-offer__title {
+  margin-bottom: 32px;
+
+  font: bold 21px / 26px $base-font;
+}
+
+.hotel-offer__description {
+  margin-bottom: 42px;
+}
+
+.hotel-offer__find {
+  display: block;
+  padding: 15px 0;
+
+  font: bold 21px / 26px $base-font;
+
+  background-color: $add-bg-color;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
+}

@@ -1,0 +1,37 @@
+.main-nav {
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  font: bold 18px / 40px $base-font;
+
+  &--current {
+    cursor: pointer;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+
+    @include btn;
+  }
+}
+
+.main-nav__toggle {
+  margin: 8px 0 8px 240px;
+  width: 40px;
+  height: 40px;
+
+  font-size: 0;
+
+  background-color: $add-bg-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

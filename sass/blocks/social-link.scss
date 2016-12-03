@@ -1,0 +1,21 @@
+.social-link {
+  display: block;
+  width: 46px;
+  height: 48px;
+
+  font-size: 0;
+
+  background-color: $add-bg-color;
+
+  &--tw {
+    background: url(../img/icon-twitter.svg) no-repeat center;
+  }
+
+  &--fb {
+    background: url(../img/icon-facebook.svg) no-repeat center;
+  }
+
+  &--yt {
+    background: url(../img/icon-youtube.svg) no-repeat center;
+  }
+}

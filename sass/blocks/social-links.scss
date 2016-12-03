@@ -1,0 +1,14 @@
+.social-links {
+  padding: 0;
+  margin-bottom: 40px;
+
+  list-style: none;
+}
+
+.social-links__item {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  background-color: $add-bg-color;
+}

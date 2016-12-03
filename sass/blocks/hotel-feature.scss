@@ -1,0 +1,53 @@
+.hotel-feature {
+  text-align: center;
+
+  outline: 1px solid green;
+}
+
+.hotel-feature__text {
+  padding: 33px 35px;
+
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+
+  &--photo {
+    padding: 46px 20px;
+
+    background-color: $add-bg-color;
+    color: $base-bg-color;
+  }
+}
+
+.hotel-feature__name {
+  margin-bottom: 20px;
+
+  font: bold 18px / 26px $base-font;
+}
+
+.hotel-feature__number {
+  margin-bottom: 26px;
+}
+
+.hotel-feature__photo {
+  height: 260px;
+
+  &--big {
+    overflow: hidden;
+
+    img {
+      height: 260px;
+      width: auto;
+      margin-left: -100px;
+    }
+  }
+
+  &--small {
+    overflow: hidden;
+
+    img {
+      height: 320px;
+      width: auto;
+      margin-top: -60px;
+    }
+  }
+}

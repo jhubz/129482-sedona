@@ -1,0 +1,31 @@
+.page-header {
+  position: relative;
+
+  text-align: center;
+
+  outline: 1px solid green;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+
+  margin-left: -51px;
+}
+
+.page-header__photo {
+  height: 389px;
+
+  background: url(../img/text-sedona-index.svg) no-repeat center,
+    url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  background-size: 85%, auto;
+}
+
+.page-header__photo-inner {
+  height: 158px;
+
+  background: url(../img/text-sedona.svg) no-repeat center,
+    url(../img/bg-back-mobile@1x.jpg) no-repeat -232px -225px;
+  background-size: 70%, 250%;
+}

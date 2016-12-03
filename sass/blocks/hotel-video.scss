@@ -1,0 +1,86 @@
+.hotel-video {
+  position: relative;
+}
+
+.hotel-video__scroll {
+  position: relative;
+  top: -50px;
+
+  margin: 0 auto;
+  width: 280px;
+  height: 45px;
+
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.hotel-video__scroll-line {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+
+  width: 235px;
+  height: 3px;
+
+  background-color: $base-bg-color;
+  opacity: 0.2;
+}
+
+.hotel-video__scroll-toggle {
+  position: absolute;
+  top: 39%;
+  left: 20%;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: $base-bg-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hotel-video__controls {
+  position: relative;
+  top: -50px;
+
+  margin: 0 auto;
+  width: 280px;
+  height: 66px;
+
+  background-color: $gray-dark;
+
+  button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 65px;
+
+    vertical-align: center;
+
+    background-color: $gray-dark;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.hotel-video__replay {
+  float: left;
+  padding-left: 50px;
+
+  background: url(../img/icon-video-replay.svg) no-repeat center;
+}
+
+.hotel-video__subtitles {
+  float: right;
+  padding-right: 50px;
+
+  background: url(../img/icon-video-subtitles.svg) no-repeat center;
+}
+
+.hotel-video__fullscreen {
+  float: right;
+  padding-right: 50px;
+
+  background: url(../img/icon-video-fullscreen.svg) no-repeat center;
+}

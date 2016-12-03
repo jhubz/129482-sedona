@@ -1,0 +1,38 @@
+.hotel-photo {
+  padding: 22px 20px;
+
+  text-align: left;
+
+  border-top: 1px solid $gray;
+
+  &:last-child {
+    border-bottom: 1px solid $gray;
+  }
+}
+
+.hotel-photo__image {
+  margin-bottom: 15px;
+}
+
+.hotel-photo__title {
+  margin-bottom: 5px;
+
+  font: bold 14px / 24px $base-font;
+}
+
+.hotel-photo__author {
+  margin-bottom: 10px;
+
+  text-transform: none;
+}
+
+.hotel-photo__likes {
+  padding-left: 30px;
+
+  font: bold 14px / 24px $base-font;
+
+  color: #000000;
+  text-decoration: none;
+  background: url(../img/icon-like.svg) no-repeat left;
+  background-size: 40%;
+}

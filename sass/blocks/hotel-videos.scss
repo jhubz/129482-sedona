@@ -1,0 +1,19 @@
+.hotel-videos {
+  text-align: center;
+
+  outline: 1px solid green;
+}
+
+.hotel-videos__header {
+  padding: 40px 25px;
+}
+
+.hotel-videos__title {
+  margin-bottom: 40px;
+
+  font: bold 18px / 26px $base-font;
+}
+
+.hotel-videos__description {
+  font: 14px / 24px $base-font;
+}

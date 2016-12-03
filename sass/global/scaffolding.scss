@@ -1,0 +1,17 @@
+body {
+  min-width: 320px;
+
+  font: 14px / 21px $base-font;
+
+  background: $base-bg-color;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+p,
+h1,
+h2,
+h3{
+  margin: 0;
+  padding: 0;
+}
