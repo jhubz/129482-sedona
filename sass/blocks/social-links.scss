@@ -3,12 +3,12 @@
   margin-bottom: 40px;
 
   list-style: none;
+}
 
-  &__item {
-    display: inline-block;
+.social-links__item {
+  display: inline-block;
 
-    vertical-align: middle;
+  vertical-align: middle;
 
-    background-color: $add-bg-color;
-  }
+  background-color: $add-bg-color;
 }

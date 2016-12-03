@@ -1,8 +1,7 @@
 body {
   min-width: 320px;
-
-  @include set-font ($base-font-size, $base-font-size*1.5);
-  font-family: PTsans, sans-serif;
+  
+  font: 14px / 21px $base-font;
 
   background: $base-bg-color;
   color: #000000;

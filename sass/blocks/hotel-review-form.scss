@@ -2,101 +2,91 @@
   padding: 0 20px 40px 20px;
 
   text-align: center;
+}
 
-  &__container {
-    padding: 25px 0;
+.hotel-review-form__container {
+  padding: 25px 0;
 
-    text-align: left;
+  text-align: left;
 
-    border: none;
-    border-top: 1px solid #e5e5e5;
-  }
+  border: none;
+  border-top: 1px solid $gray;
+}
 
-  &__title {
-    margin-bottom: 28px;
+.hotel-review-form__title {
+  margin-bottom: 28px;
 
-    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
-    text-align: center;
-  }
+  font: bold 18px / 26px $base-font;
+  text-align: center;
+}
 
-  &__text-field-label {
-    @include set-font ($base-font-size, $base-font-size*26/14);
-    font-family: PTsans, sans-serif;
-  }
+.hotel-review-form__text-field-label {
+  font: 14px / 26px $base-font;
+}
 
-  &__text-field {
-  }
+.hotel-review-form__text-field {
+  padding: 15px;
 
-  &__field-container {
-    margin-bottom: 20px;
+  background-color: $gray-dark;
+  border: none;
+  outline: none;
+}
 
-    &--phone {
-      position: relative;
+.hotel-review-form__phone-error {
+  margin-bottom: 20px;
+  padding-left: 15px;
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
+  color: red;
+  text-transform: none;
+}
 
-        width: 45px;
-        height: 45px;
+.hotel-review-form__field-container {
+  margin-bottom: 20px;
 
-        background: #e6e6e6 url(../img/icon-phone.svg) no-repeat center;
-      }
-    }
+  &--phone {
+    position: relative;
+    
+    margin-bottom: 10px;
 
-    &--email {
-      position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
+      width: 45px;
+      height: 45px;
 
-        width: 45px;
-        height: 45px;
-
-        background: #e6e6e6 url(../img/icon-mail.svg) no-repeat center;
-      }
+      background: $gray-darken url(../img/icon-phone.svg) no-repeat center;
     }
   }
 
-  &__text-field {
-    padding: 15px;
+  &--email {
+    position: relative;
 
-    background-color: #f2f2f2;
-    border: none;
-    outline: none;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
 
-  &__comment {
+      width: 45px;
+      height: 45px;
 
-    background-color: #f2f2f2;
-  }
-
-  &__submit {
-    width: 100%;
-    padding: 15px;
-
-    @include set-font ($base-font-size*1.5, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
-
-    background-color: $add-bg-color;
-    color: #ffffff;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #669ec0;
-    }
-    &:active {
-      background-color: #5496bd;
-      color: #94b9d2;
+      background: $gray-darken url(../img/icon-mail.svg) no-repeat center;
     }
   }
+}
+
+.hotel-review-form__comment {
+  background-color: $gray-dark;
+}
+
+.hotel-review-form__submit {
+  width: 100%;
+  padding: 15px;
+
+  font: bold 21px / 26px $base-font;
+  
+  @include btn;
 }

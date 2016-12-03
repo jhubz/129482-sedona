@@ -1,40 +1,38 @@
 .hotel-offer {
   padding: 33px 20px 50px 20px;
 
-  @include set-font ($base-font-size, $base-font-size*24/14);
-  font-family: PTsans, sans-serif;
+  font: 14px / 24px $base-font;
   text-align: center;
 
   outline: 1px solid green;
+}
 
-  &__title {
-    margin-bottom: 32px;
+.hotel-offer__title {
+  margin-bottom: 32px;
+  
+  font: bold 21px / 26px $base-font;
+}
 
-    @include set-font ($base-font-size*1.5, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
+.hotel-offer__description {
+  margin-bottom: 42px;
+}
+
+.hotel-offer__find {
+  display: block;
+  padding: 15px 0;
+
+  font: bold 21px / 26px $base-font;
+
+  background-color: $add-bg-color;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
   }
-
-  &__description {
-    margin-bottom: 42px;
-  }
-
-  &__find {
-    display: block;
-    padding: 15px 0;
-
-    @include set-font ($base-font-size*1.5, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
-
-    background-color: $add-bg-color;
-    color: #ffffff;
-    text-decoration: none;
-
-    &:hover {
-      background-color: #669ec0;
-    }
-    &:active {
-      background-color: #5496bd;
-      color: #94b9d2;
-    }
+  
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
   }
 }

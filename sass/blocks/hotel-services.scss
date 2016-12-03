@@ -5,38 +5,37 @@
   text-align: left;
 
   list-style: none;
+}
 
-  &__item {
-    padding-left: 50px;
-    padding-top: 40px;
+.hotel-services__item {
+  padding-left: 50px;
+  padding-top: 40px;
 
-    &--housing {
-      background: url(../img/icon-house.svg) no-repeat left;
-      background-position: 0 30px;
-      background-size: 15%;
-    }
-
-    &--souvenirs {
-      background: url(../img/icon-gift.svg) no-repeat left;
-      background-position: 3px 27px;
-      background-size: 13%;
-    }
-
-    &--food {
-      background: url(../img/icon-burger.svg) no-repeat left;
-      background-position: 0 30px;
-      background-size: 15%;
-    }
-
-    &:last-child {
-      padding-bottom: 40px;
-    }
+  &--housing {
+    background: url(../img/icon-house.svg) no-repeat left;
+    background-position: 0 30px;
+    background-size: 15%;
   }
 
-  &__name {
-    margin-bottom: 26px;
-
-    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
+  &--souvenirs {
+    background: url(../img/icon-gift.svg) no-repeat left;
+    background-position: 3px 27px;
+    background-size: 13%;
   }
+
+  &--food {
+    background: url(../img/icon-burger.svg) no-repeat left;
+    background-position: 0 30px;
+    background-size: 15%;
+  }
+
+  &:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.hotel-services__name {
+  margin-bottom: 26px;
+  
+  font: bold 18px / 26px $base-font;
 }

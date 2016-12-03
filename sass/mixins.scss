@@ -1,4 +1,16 @@
-@mixin set-font ($font-size, $line-height) {
-  font-size: $font-size;
-  line-height: $line-height;
+@mixin btn {
+  background-color: $add-bg-color;
+  color: $base-bg-color;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
 }

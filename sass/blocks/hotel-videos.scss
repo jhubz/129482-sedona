@@ -2,21 +2,18 @@
   text-align: center;
 
   outline: 1px solid green;
+}
 
-  &__header {
-    padding: 40px 25px;
-  }
+.hotel-videos__header {
+  padding: 40px 25px;
+}
 
-  &__title {
-    margin-bottom: 40px;
+.hotel-videos__title {
+  margin-bottom: 40px;
 
-    @include set-font ($base-font-size*18/14, $base-font-size*26/14);
-    font-family: PTsansBold, sans-serif;
-  }
+  font: bold 18px / 26px $base-font;
+}
 
-  &__description {
-
-    @include set-font ($base-font-size, $base-font-size*24/14);
-    font-family: PTsans, sans-serif;
-  }
+.hotel-videos__description {
+  font: 14px / 24px $base-font;
 }
