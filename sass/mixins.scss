@@ -14,3 +14,28 @@
     color: #94b9d2;
   }
 }
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  //ПОТОМ УДАЛИТЬ
+  outline: 1px solid green;
+
+  @media #{$tablet-widths} {
+    width: 768px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+  }
+}

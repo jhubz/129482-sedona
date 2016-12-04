@@ -4,15 +4,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div class="page-container">
 
-      <header class="page-header">
+    <header class="page-header">
 
-        <nav class="main-nav">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
@@ -20,128 +21,128 @@
             <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </nav>
+        </div>
+      </nav>
 
-        <div class="page-header__logo">
-          <a href="index.html">
-            <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-          </a>
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+        </a>
+      </div>
+
+      <div class="page-header__photo-inner">
+      </div>
+    </header>
+
+    <section class="hotel-review">
+      <div class="content-header">
+        <h2 class="content-header__title">Оставьте свой отзыв</h2>
+        <p class="content-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      <form class="hotel-review-form" action="#" method="post">
+        <div class="hotel-review-form__container">
+          <h3 class="hotel-review-form__title">Представьтесь:</h3>
+
+          <div class="hotel-review-form__field-container">
+            <label class="hotel-review-form__text-field-label" for="name-id">Имя*:</label>
+            <input class="hotel-review-form__text-field" id="name-id" type="text" name="name" placeholder="Петр">
+          </div>
+
+          <div class="hotel-review-form__field-container">
+            <label class="hotel-review-form__text-field-label" for="surname-id">Фамилия*:</label>
+            <input class="hotel-review-form__text-field" id="surname-id" type="text" name="surname" placeholder="Иванов">
+          </div>
+
+          <div class="hotel-review-form__field-container">
+            <label class="hotel-review-form__text-field-label" for="patronymic-id">Отчество:</label>
+            <input class="hotel-review-form__text-field" id="patronymic-id" type="text" name="patronymic"  placeholder="Александрович">
+          </div>
         </div>
 
-        <div class="page-header__photo-inner">
+        <div class="hotel-review-form__container">
+          <h3 class="hotel-review-form__title">Контактная информация:</h3>
+
+          <div class="hotel-review-form__field-container  hotel-review-form__field-container--phone">
+            <label class="hotel-review-form__text-field-label" for="phone-id">Контактный телефон*:</label>
+            <input class="hotel-review-form__text-field" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
+          </div>
+          <div class="hotel-review-form__phone-error">Ошибка, перепроверьте номер</div>
+
+          <div class="hotel-review-form__field-container  hotel-review-form__field-container--email">
+            <label class="hotel-review-form__text-field-label" for="email-id">Электронная почта*:</label>
+            <input class="hotel-review-form__text-field" id="email-id" type="email" name="email" placeholder="Введите e-mail">
+          </div>
         </div>
-      </header>
 
-      <section class="hotel-review">
-        <div class="content-header">
-          <h2 class="content-header__title">Оставьте свой отзыв</h2>
-          <p class="content-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="hotel-review-form__container">
+          <h3 class="hotel-review-form__title">Ваше общее впечатление:</h3>
+
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__radio" id="impression-good-id" type="radio" name="impression" value="Скорее положительное" checked>
+            <label class="hotel-review-form__radio-label" for="impression-good-id">
+              <span class="hotel-review-form__radio-visual"></span>
+              Скорее положительное
+            </label>
+          </div>
+
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__radio" id="impression-bad-id" type="radio" name="impression" value="Скорее отрицательное">
+            <label class="hotel-review-form__radio-label" for="impression-bad-id">Скорее отрицательное</label>
+          </div>
+
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__radio" id="impression-difficult-id" type="radio" name="impression" value="Затрудняюсь ответить">
+            <label class="hotel-review-form__radio-label" for="impression-difficult-id">Затрудняюсь ответить</label>
+          </div>
         </div>
 
-        <form class="hotel-review-form" action="#" method="post">
-          <div class="hotel-review-form__container">
-            <h3 class="hotel-review-form__title">Представьтесь:</h3>
+        <div class="hotel-review-form__container">
+          <h3 class="hotel-review-form__title">Посещенные достопримечательности:</h3>
 
-            <div class="hotel-review-form__field-container">
-              <label class="hotel-review-form__text-field-label" for="name-id">Имя*:</label>
-              <input class="hotel-review-form__text-field" id="name-id" type="text" name="name" placeholder="Петр">
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <label class="hotel-review-form__text-field-label" for="surname-id">Фамилия*:</label>
-              <input class="hotel-review-form__text-field" id="surname-id" type="text" name="surname" placeholder="Иванов">
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <label class="hotel-review-form__text-field-label" for="patronymic-id">Отчество:</label>
-              <input class="hotel-review-form__text-field" id="patronymic-id" type="text" name="patronymic"  placeholder="Александрович">
-            </div>
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__checkbox" id="attraction-devilBridge-id" type="checkbox" name="attraction" value="Мост Дьявола" checked>
+            <label class="hotel-review-form__checkbox-label" for="attraction-devilBridge-id">Мост Дьявола</label>
           </div>
 
-          <div class="hotel-review-form__container">
-            <h3 class="hotel-review-form__title">Контактная информация:</h3>
-
-            <div class="hotel-review-form__field-container  hotel-review-form__field-container--phone">
-              <label class="hotel-review-form__text-field-label" for="phone-id">Контактный телефон*:</label>
-              <input class="hotel-review-form__text-field" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
-            </div>
-            <div class="hotel-review-form__phone-error">Ошибка, перепроверьте номер</div>
-
-            <div class="hotel-review-form__field-container  hotel-review-form__field-container--email">
-              <label class="hotel-review-form__text-field-label" for="email-id">Электронная почта*:</label>
-              <input class="hotel-review-form__text-field" id="email-id" type="email" name="email" placeholder="Введите e-mail">
-            </div>
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__checkbox" id="attraction-slidePark-id" type="checkbox" name="attraction" value="Слайд-парк" checked>
+            <label class="hotel-review-form__checkbox-label" for="attraction-slidePark-id">Слайд-парк</label>
           </div>
 
-          <div class="hotel-review-form__container">
-            <h3 class="hotel-review-form__title">Ваше общее впечатление:</h3>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__radio" id="impression-good-id" type="radio" name="impression" value="Скорее положительное" checked>
-              <label class="hotel-review-form__radio-label" for="impression-good-id">
-                <span class="hotel-review-form__radio-visual"></span>
-                Скорее положительное
-              </label>
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__radio" id="impression-bad-id" type="radio" name="impression" value="Скорее отрицательное">
-              <label class="hotel-review-form__radio-label" for="impression-bad-id">Скорее отрицательное</label>
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__radio" id="impression-difficult-id" type="radio" name="impression" value="Затрудняюсь ответить">
-              <label class="hotel-review-form__radio-label" for="impression-difficult-id">Затрудняюсь ответить</label>
-            </div>
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__checkbox" id="attraction-bellMountain-id" type="checkbox" name="attraction" value="Гора-Колокол">
+            <label class="hotel-review-form__checkbox-label" for="attraction-bellMountain-id">Гора-Колокол</label>
           </div>
 
-          <div class="hotel-review-form__container">
-            <h3 class="hotel-review-form__title">Посещенные достопримечательности:</h3>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__checkbox" id="attraction-devilBridge-id" type="checkbox" name="attraction" value="Мост Дьявола" checked>
-              <label class="hotel-review-form__checkbox-label" for="attraction-devilBridge-id">Мост Дьявола</label>
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__checkbox" id="attraction-slidePark-id" type="checkbox" name="attraction" value="Слайд-парк" checked>
-              <label class="hotel-review-form__checkbox-label" for="attraction-slidePark-id">Слайд-парк</label>
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__checkbox" id="attraction-bellMountain-id" type="checkbox" name="attraction" value="Гора-Колокол">
-              <label class="hotel-review-form__checkbox-label" for="attraction-bellMountain-id">Гора-Колокол</label>
-            </div>
-
-            <div class="hotel-review-form__field-container">
-              <input class="hotel-review-form__checkbox" id="attraction-redRocks-id" type="checkbox" name="attraction" value="Красные скалы" checked>
-              <label class="hotel-review-form__checkbox-label" for="attraction-redRocks-id">Красные скалы</label>
-            </div>
+          <div class="hotel-review-form__field-container">
+            <input class="hotel-review-form__checkbox" id="attraction-redRocks-id" type="checkbox" name="attraction" value="Красные скалы" checked>
+            <label class="hotel-review-form__checkbox-label" for="attraction-redRocks-id">Красные скалы</label>
           </div>
+        </div>
 
-          <div class="hotel-review-form__container">
-            <h3 class="hotel-review-form__title">Опишите свои эмоции:</h3>
-            <div class="hotel-review-form__field-container">
-              <textarea class="hotel-review-form__comment" id="emotions-id" name="emotions" rows=10 cols=35 placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+        <div class="hotel-review-form__container">
+          <h3 class="hotel-review-form__title">Опишите свои эмоции:</h3>
+          <div class="hotel-review-form__field-container">
+            <textarea class="hotel-review-form__comment" id="emotions-id" name="emotions" rows=10 cols=35 placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
+        </div>
 
-          <input class="hotel-review-form__submit" type="submit" value="Отправить отзыв">
-        </form>
-      </section>
+        <input class="hotel-review-form__submit" type="submit" value="Отправить отзыв">
+      </form>
+    </section>
 
-      <footer class="page-footer">
-        <p class="page-footer__hashtag">#VisitSedona</p>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#VisitSedona</p>
 
-        <ul class="social-links">
-          <li class="social-links__item"><a class="social-link  social-link--tw" href="https://tweeter.com/htmlacademy">Мы в Твиттере</a></li>
-          <li class="social-links__item"><a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
-          <li class="social-links__item"><a class="social-link  social-link--yt" href="https://youtube.com/htmlacademy">Мы на Ютубе</a></li>
-        </ul>
+      <ul class="social-links">
+        <li class="social-links__item"><a class="social-link  social-link--tw" href="https://tweeter.com/htmlacademy">Мы в Твиттере</a></li>
+        <li class="social-links__item"><a class="social-link  social-link--fb" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+        <li class="social-links__item"><a class="social-link  social-link--yt" href="https://youtube.com/htmlacademy">Мы на Ютубе</a></li>
+      </ul>
 
-        <p class="page-footer__copyright">Разработано <a href="http://htmlacademy.ru">Html academy</a></p>
-      </footer>
+      <p class="page-footer__copyright">Разработано <a href="http://htmlacademy.ru">Html academy</a></p>
+    </footer>
 
-      <div>
-        </body>
-      </html>
+  </body>
+</html>

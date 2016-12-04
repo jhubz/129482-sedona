@@ -2,3 +2,7 @@
   background-color: $base-bg-color;
   outline: 1px solid green;
 }
+
+.hotel-features__list {
+  @include clearfix();
+}

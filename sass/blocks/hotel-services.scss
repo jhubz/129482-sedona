@@ -11,22 +11,19 @@
   padding-left: 50px;
   padding-top: 40px;
 
+  background: no-repeat 0 30px;
+  background-size: 15%;
+
   &--housing {
-    background: url(../img/icon-house.svg) no-repeat left;
-    background-position: 0 30px;
-    background-size: 15%;
+    background-image: url(../img/icon-house.svg);
   }
 
   &--souvenirs {
-    background: url(../img/icon-gift.svg) no-repeat left;
-    background-position: 3px 27px;
-    background-size: 13%;
+    background-image: url(../img/icon-gift.svg);
   }
 
   &--food {
-    background: url(../img/icon-burger.svg) no-repeat left;
-    background-position: 0 30px;
-    background-size: 15%;
+    background-image: url(../img/icon-burger.svg);
   }
 
   &:last-child {
@@ -38,4 +35,50 @@
   margin-bottom: 26px;
 
   font: bold 18px / 26px $base-font;
+}
+
+@media #{$tablet-widths} {
+  .hotel-services {
+    @include clearfix;
+
+    padding: 0;
+    clear: both;
+  }
+
+  .hotel-services__item {
+    width: 166px;
+    padding: 160px 45px 65px 45px;
+
+    text-align: center;
+    vertical-align: top;
+
+    background-position: center 50px;
+    background-size: 30%;
+
+    &--housing {
+      float: left;
+    }
+
+    &--souvenirs {
+      float: right;
+      background-position: center 40px;
+    }
+
+    &--food {
+      float: left;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .hotel-services__item {
+    width: 300px;
+    padding: 160px 50px 65px 50px;
+
+    background-size: 20%;
+  }
 }

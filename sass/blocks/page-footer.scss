@@ -22,10 +22,41 @@
     display: inline-block;
     width: 40px;
     height: 40px;
+    margin-top: -5px;
 
     font-size: 0;
     vertical-align: top;
 
     background: url(../img/htmlacademy.svg) no-repeat center;
+  }
+}
+
+@media #{$tablet-widths} {
+  .page-footer {
+    @include clearfix();
+
+    padding: 40px 60px 0 60px;;
+  }
+
+  .page-footer__hashtag {
+    float: left;
+    margin: 10px 100px 0 0;
+  }
+
+  .page-footer__copyright {
+    float: right;
+    margin-top: 10px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-footer {
+    @include clearfix();
+
+    padding-left: 150px;
+  }
+
+  .page-footer__hashtag {
+    margin: 10px 240px 0 0;
   }
 }
