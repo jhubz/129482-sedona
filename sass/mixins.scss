@@ -28,9 +28,6 @@
   width: 320px;
   margin: 0 auto;
 
-  //ПОТОМ УДАЛИТЬ
-  outline: 1px solid green;
-
   @media #{$tablet-widths} {
     width: 768px;
   }
@@ -38,4 +35,15 @@
   @media #{$desktop-widths} {
     width: 1200px;
   }
+}
+
+@mixin container-fluid () {
+  width: auto;
+
+  @media #{$tablet-widths} {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 }

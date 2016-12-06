@@ -40,6 +40,10 @@
     background-size: 59%, 133%;
     background-position: center 77px, center;
   }
+
+  .page-header__photo-inner {
+    height: 290px;
+  }
 }
 
 @media #{$desktop-widths} {

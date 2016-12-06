@@ -1,5 +1,22 @@
 .hotel-photos {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
 
   outline: 1px solid green;
+}
+
+@media #{$tablet-widths} {
+  .hotel-photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .hotel-photos {
+    padding: 40px 0;
+  }
 }

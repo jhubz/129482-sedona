@@ -5,6 +5,7 @@
   text-align: center;
 
   background-color: $base-bg-color;
+  outline: 1px solid green;
 }
 
 .content-header__wrapper {
@@ -19,16 +20,20 @@
 
 @media #{$tablet-widths} {
   .content-header__wrapper {
-    padding: 0 140px;
+    padding: 0 165px;
   }
 
   .content-header__title {
     font: bold 21px / 26px $base-font;
+
+    &--inner {
+      font-size: 30px;
+    }
   }
 }
 
 @media #{$desktop-widths} {
   .content-header__wrapper {
-    padding: 0 350px;
+    padding: 0 380px;
   }
 }
