@@ -143,30 +143,30 @@
 
   &:checked + label span::before {
     content: "";
-	position: absolute;
-	top: 28px;
-	left: 13px;
+    position: absolute;
+    top: 28px;
+    left: 13px;
 
-	width: 15px;
-	height: 3px;
+    width: 15px;
+    height: 3px;
 
-	background: #000000;
+    background: #000000;
     transform: rotate(45deg);
-	border-radius: 1px;
+    border-radius: 1px;
   }
 
   &:checked + label span::after {
     content: "";
-	position: absolute;
-	top: 25px;
-	left: 21px;
+    position: absolute;
+    top: 25px;
+    left: 21px;
 
-	width: 25px;
-	height: 3px;
+    width: 25px;
+    height: 3px;
 
-	background: #000000;
+    background: #000000;
     transform: rotate(-45deg);
-	border-radius: 1px;
+    border-radius: 1px;
   }
 }
 
@@ -356,7 +356,7 @@
       margin-left: auto;
     }
 
-     &--checkbox {
+    &--checkbox {
       width: 25%;
     }
   }
