@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -20,8 +20,9 @@
             <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </nav>
+
+        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
 
         <div class="page-header__logo">
           <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны" width="102" height="84">
@@ -31,22 +32,23 @@
         </div>
       </header>
 
+      <div class="content-header">
+        <h2 class="content-header__title">Седона - небольшой городок в Аризона, заслуживающий большего!</h2>
+        <p class="content-header__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+
       <section class="hotel-features">
-        <div class="content-header">
-          <h2 class="content-header__title">Седона - небольшой городок в Аризона, заслуживающий большего!</h2>
-          <p class="content-header__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
 
         <div class="hotel-features__list">
           <div class="hotel-feature">
 
-            <div class="hotel-feature__text  hotel-feature__text--photo">
+            <div class="hotel-feature__text  hotel-feature__text--photo hotel-feature__text--left">
               <h3 class="hotel-feature__name">Настоящий городок</h3>
               <div class="hotel-feature__number">-№1-</div>
               <p class="hotel-feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
 
-            <div class="hotel-feature__photo  hotel-feature__photo--big">
+            <div class="hotel-feature__photo  hotel-feature__photo--big hotel-feature__photo--right">
               <img src="img/photo-city@1x.jpg" alt="Городок Седона" width="800" height="400">
             </div>
 
@@ -69,12 +71,12 @@
           </div>
 
           <div class="hotel-feature">
-            <div class="hotel-feature__text  hotel-feature__text--photo">
+            <div class="hotel-feature__text  hotel-feature__text--photo hotel-feature__text--right">
               <h3 class="hotel-feature__name">Там есть мост дьявола</h3>
               <div class="hotel-feature__number">-№2-</div>
               <p class="hotel-feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="hotel-feature__photo  hotel-feature__photo--small">
+            <div class="hotel-feature__photo  hotel-feature__photo--small hotel-feature__photo--left">
               <img src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="320" height="320">
             </div>
           </div>
@@ -83,7 +85,7 @@
             <div class="hotel-feature__text">
               <h3 class="hotel-feature__name">Небольшая площадь</h3>
               <div class="hotel-feature__number">-№3-</div>
-              <p class="hotel-feature__description">Все достопримечательности находятся очень близко</p>
+              <p class="hotel-feature__description">Все достопримеча&shy;тельности находятся очень близко</p>
             </div>
           </div>
 

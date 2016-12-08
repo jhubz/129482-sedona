@@ -5,3 +5,19 @@
 
   outline: 1px solid green;
 }
+
+@media #{$tablet-widths} {
+  .hotel-map {
+    img {
+      width: 768px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .hotel-map {
+    img {
+      width: 1200px;
+    }
+  }
+}

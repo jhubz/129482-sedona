@@ -1,9 +1,20 @@
 .page-header {
   position: relative;
 
-  text-align: center;
+  background-color: $base-bg-color;
+}
 
-  outline: 1px solid green;
+.page-header__nav-toggle {
+  margin: 8px 0 8px 240px;
+  width: 40px;
+  height: 40px;
+
+  font-size: 0;
+
+  background-color: $add-bg-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .page-header__logo {
@@ -20,6 +31,7 @@
   background: url(../img/text-sedona-index.svg) no-repeat center,
     url(../img/bg-back-mobile@1x.jpg) no-repeat center;
   background-size: 85%, auto;
+  outline: 1px solid green;
 }
 
 .page-header__photo-inner {
@@ -28,4 +40,32 @@
   background: url(../img/text-sedona.svg) no-repeat center,
     url(../img/bg-back-mobile@1x.jpg) no-repeat -232px -225px;
   background-size: 70%, 250%;
+}
+
+@media #{$tablet-widths} {
+  .page-header__logo {
+    top: 0;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+
+  .page-header__photo {
+    height: 518px;
+
+    background-size: 59%, 133%;
+    background-position: center 77px, center;
+  }
+
+  .page-header__photo-inner {
+    height: 290px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-header__photo {
+    background-size: 40%, 100%;
+    background-position: center 58px, center;
+  }
 }

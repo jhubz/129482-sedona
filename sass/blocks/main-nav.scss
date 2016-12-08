@@ -1,4 +1,6 @@
 .main-nav {
+  background-color: $base-bg-color;
+  outline: 1px solid green;
 }
 
 .main-nav__list {
@@ -10,28 +12,60 @@
 
 .main-nav__item {
   font: bold 18px / 40px $base-font;
+  text-align: center;
 
   &--current {
     cursor: pointer;
   }
 
   a {
-    display: inline-block;
-    width: 100%;
-
     @include btn;
+
+    display: block;
   }
 }
 
-.main-nav__toggle {
-  margin: 8px 0 8px 240px;
-  width: 40px;
-  height: 40px;
+@media #{$tablet-widths} {
+  .main-nav__list {
+    font-size: 0;
+  }
 
-  font-size: 0;
+  .main-nav__item {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 16px 20px;
 
-  background-color: $add-bg-color;
-  border: none;
-  outline: none;
-  cursor: pointer;
+    font: bold 14px / 26px $base-font;
+    vertical-align: middle;
+    text-align: left;
+
+    a {
+      background-color: $base-bg-color;
+      color: #000000;
+
+      &:hover {
+        background-color: $base-bg-color;
+        color: $add-bg-color;
+      }
+
+      &:active {
+        color: #cacaca;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-right: 215px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-nav__item {
+    margin-right: 68px;
+    padding: 16px 60px;
+  }
 }

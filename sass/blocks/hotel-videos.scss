@@ -17,3 +17,23 @@
 .hotel-videos__description {
   font: 14px / 24px $base-font;
 }
+
+@media #{$tablet-widths} {
+  .hotel-videos {
+    padding-bottom: 40px;
+  }
+
+  .hotel-videos__header {
+    padding: 40px 165px;
+  }
+
+  .hotel-videos__title {
+    font-size: 30px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .hotel-videos__header {
+    padding: 40px 390px;
+  }
+}

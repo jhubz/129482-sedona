@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -19,8 +20,9 @@
             <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
         </nav>
+
+        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
 
         <div class="page-header__logo">
           <a href="index.html">
@@ -32,57 +34,66 @@
         </div>
       </header>
 
+      <div class="content-header">
+        <h2 class="content-header__title  content-header__title--inner">Фото и видео</h2>
+        <p class="content-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+      </div>
+
       <section class="hotel-photos">
-        <div class="content-header">
-          <h2 class="content-header__title">Фото и видео</h2>
-          <p class="content-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-        </div>
 
         <article class="hotel-photo">
           <img class="hotel-photo__image" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280">
-          <h3 class="hotel-photo__title">Неродные просторы</h3>
-          <p class="hotel-photo__author">Автор фото: Борис</p>
-          <a class="hotel-photo__likes" href="#">1350</a>
+          <div class="hotel-photo__description">
+            <h3 class="hotel-photo__title">Неродные просторы</h3>
+            <p class="hotel-photo__author">Автор фото: Борис</p>
+            <a class="hotel-photo__likes" href="#">1350</a>
+          </div>
         </article>
 
         <article class="hotel-photo">
           <img class="hotel-photo__image" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
-          <h3 class="hotel-photo__title">Местная растительность</h3>
-          <p class="hotel-photo__author">Автор фото: Сергей</p>
-          <a class="hotel-photo__likes" href="#">143</a>
+          <div class="hotel-photo__description">
+            <h3 class="hotel-photo__title">Местная растительность</h3>
+            <p class="hotel-photo__author">Автор фото: Сергей</p>
+            <a class="hotel-photo__likes" href="#">143</a>
+          </div>
         </article>
 
         <article class="hotel-photo">
           <img class="hotel-photo__image" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
-          <h3 class="hotel-photo__title">Дорога на север</h3>
-          <p class="hotel-photo__author">Автор фото: Петр</p>
-          <a class="hotel-photo__likes" href="#">96</a>
+          <div class="hotel-photo__description">
+            <h3 class="hotel-photo__title">Дорога на север</h3>
+            <p class="hotel-photo__author">Автор фото: Петр</p>
+            <a class="hotel-photo__likes" href="#">96</a>
+          </div>
         </article>
 
         <article class="hotel-photo">
           <img class="hotel-photo__image" src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280">
-          <h3 class="hotel-photo__title">Мост Дьявола</h3>
-          <p class="hotel-photo__author">Автор фото: Антон</p>
-          <a class="hotel-photo__likes" href="#">254</a>
+          <div class="hotel-photo__description">
+            <h3 class="hotel-photo__title">Мост Дьявола</h3>
+            <p class="hotel-photo__author">Автор фото: Антон</p>
+            <a class="hotel-photo__likes" href="#">254</a>
+          </div>
         </article>
       </section>
 
       <section class="hotel-videos">
-        <div class="hotel-videos__header">
+        <header class="hotel-videos__header">
           <h2 class="hotel-videos__title">Все еще сомневаетесь?</h2>
           <p class="hotel-videos__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
+        </header>
 
         <div class="hotel-video">
           <img src="img/video-mobile@1x.jpg" alt="Видеопрезентация Седоны" width="320" height="201">
-          <div class="hotel-video__scroll">
-            <div class="hotel-video__scroll-line"></div>
-            <div class="hotel-video__scroll-toggle"></div>
-          </div>
           <div class="hotel-video__controls">
+            <div class="hotel-video__scroll">
+              <div class="hotel-video__scroll-line"></div>
+              <div class="hotel-video__scroll-toggle"></div>
+            </div>
             <button class="hotel-video__replay"></button>
-            <button class="hotel-video__fullscreen"></button>
             <button class="hotel-video__subtitles"></button>
+            <button class="hotel-video__fullscreen"></button>
           </div>
         </div>
       </section>
@@ -98,7 +109,6 @@
 
         <p class="page-footer__copyright">Разработано <a href="http://htmlacademy.ru">Html academy</a></p>
       </footer>
-
     </div>
   </body>
 </html>
