@@ -14,16 +14,15 @@
       <header class="page-header">
 
         <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="main-nav__item  main-nav__item--current"><a>Форма отзыва</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
-            </ul>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item  main-nav__item--current"><a>Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+          </ul>
         </nav>
+
+        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
 
         <div class="page-header__logo">
           <a href="index.html">
@@ -36,10 +35,8 @@
       </header>
 
       <div class="content-header">
-        <div class="content-header__wrapper">
-          <h2 class="content-header__title  content-header__title--inner">Оставьте свой отзыв</h2>
-          <p class="content-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
+        <h2 class="content-header__title  content-header__title--inner">Оставьте свой отзыв</h2>
+        <p class="content-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <section class="hotel-review">
@@ -86,7 +83,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--radio">
               <input class="hotel-review-form__radio" id="impression-good-id" type="radio" name="impression" value="Скорее положительное" checked>
               <label class="hotel-review-form__radio-label" for="impression-good-id">
-                <span class="hotel-review-form__radio-visual"></span>
                 Скорее положительное
               </label>
             </div>
@@ -94,7 +90,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--radio">
               <input class="hotel-review-form__radio" id="impression-bad-id" type="radio" name="impression" value="Скорее отрицательное">
               <label class="hotel-review-form__radio-label" for="impression-bad-id">
-                <span class="hotel-review-form__radio-visual"></span>
                 Скорее отрицательное
               </label>
             </div>
@@ -102,7 +97,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--radio">
               <input class="hotel-review-form__radio" id="impression-difficult-id" type="radio" name="impression" value="Затрудняюсь ответить">
               <label class="hotel-review-form__radio-label" for="impression-difficult-id">
-                <span class="hotel-review-form__radio-visual"></span>
                 Затрудняюсь ответить
               </label>
             </div>
@@ -114,7 +108,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--checkbox">
               <input class="hotel-review-form__checkbox" id="attraction-devilBridge-id" type="checkbox" name="attraction" value="Мост Дьявола" checked>
               <label class="hotel-review-form__checkbox-label" for="attraction-devilBridge-id">
-                <span class="hotel-review-form__checkbox-visual"></span>
                 Мост Дьявола
               </label>
             </div>
@@ -122,7 +115,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--checkbox">
               <input class="hotel-review-form__checkbox" id="attraction-slidePark-id" type="checkbox" name="attraction" value="Слайд-парк" checked>
               <label class="hotel-review-form__checkbox-label" for="attraction-slidePark-id">
-                <span class="hotel-review-form__checkbox-visual"></span>
                 Слайд-парк
               </label>
             </div>
@@ -130,7 +122,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--checkbox">
               <input class="hotel-review-form__checkbox" id="attraction-bellMountain-id" type="checkbox" name="attraction" value="Гора-Колокол">
               <label class="hotel-review-form__checkbox-label" for="attraction-bellMountain-id">
-                <span class="hotel-review-form__checkbox-visual"></span>
                 Гора-Колокол
               </label>
             </div>
@@ -138,7 +129,6 @@
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--checkbox">
               <input class="hotel-review-form__checkbox" id="attraction-redRocks-id" type="checkbox" name="attraction" value="Красные скалы" checked>
               <label class="hotel-review-form__checkbox-label" for="attraction-redRocks-id">
-                <span class="hotel-review-form__checkbox-visual"></span>
                 Красные скалы
               </label>
             </div>

@@ -98,11 +98,11 @@
 .hotel-review-form__radio {
   display: none;
 
-  &:checked + label span::after {
+  &:checked + label::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
 
     margin-left: -10px;
     margin-top: -10px;
@@ -123,50 +123,48 @@
   font: bold 18px / 26px $base-font;
 
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: $gray-dark;
+    border-radius: 50%;
+  }
 }
-
-.hotel-review-form__radio-visual {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 55px;
-  height: 55px;
-
-  background-color: $gray-dark;
-  border-radius: 50%;
-}
-
 
 .hotel-review-form__checkbox {
   display: none;
-
+  /*
   &:checked + label span::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 13px;
+
+  width: 15px;
+  height: 3px;
+
+  background: #000000;
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+  */
+  &:checked + label::after {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 13px;
+    top: 20px;
+    left: 15px;
 
-    width: 15px;
-    height: 3px;
+    width: 55px;
+    height: 55px;
 
-    background: #000000;
-    transform: rotate(45deg);
-    border-radius: 1px;
-  }
-
-  &:checked + label span::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 21px;
-
-    width: 25px;
-    height: 3px;
-
-    background: #000000;
-    transform: rotate(-45deg);
-    border-radius: 1px;
+    background: url(../img/icon-tick.svg) no-repeat 0px 0px;
   }
 }
 
@@ -179,20 +177,20 @@
   font: bold 18px / 26px $base-font;
 
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: $gray-dark;
+    border-radius: 5px;
+  }
 }
-
-.hotel-review-form__checkbox-visual {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 55px;
-  height: 55px;
-
-  background-color: $gray-dark;
-  border-radius: 5px;
-}
-
 
 .hotel-review-form__comment {
   width: 100%;

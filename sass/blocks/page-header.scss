@@ -4,6 +4,19 @@
   background-color: $base-bg-color;
 }
 
+.page-header__nav-toggle {
+  margin: 8px 0 8px 240px;
+  width: 40px;
+  height: 40px;
+
+  font-size: 0;
+
+  background-color: $add-bg-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .page-header__logo {
   position: absolute;
   top: 160px;
@@ -32,6 +45,10 @@
 @media #{$tablet-widths} {
   .page-header__logo {
     top: 0;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
   }
 
   .page-header__photo {

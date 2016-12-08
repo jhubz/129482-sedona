@@ -1,15 +1,11 @@
 .content-header {
-  padding: 46px 0 32px 0;
+  padding: 46px 30px 32px 30px;
 
   font: 14px / 26px $base-font;
   text-align: center;
 
   background-color: $base-bg-color;
   outline: 1px solid green;
-}
-
-.content-header__wrapper {
-  padding: 0 30px;
 }
 
 .content-header__title {
@@ -19,8 +15,8 @@
 }
 
 @media #{$tablet-widths} {
-  .content-header__wrapper {
-    padding: 0 165px;
+  .content-header {
+    padding: 46px 165px 32px 165px;
   }
 
   .content-header__title {
@@ -33,7 +29,7 @@
 }
 
 @media #{$desktop-widths} {
-  .content-header__wrapper {
-    padding: 0 380px;
+  .content-header {
+    padding: 46px 380px 32px 380px;
   }
 }

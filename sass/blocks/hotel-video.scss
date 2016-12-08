@@ -9,12 +9,36 @@
   }
 }
 
+.hotel-video__controls {
+  position: relative;
+  top: -51px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+
+  background-color: $gray-dark;
+
+  button {
+    width: 20px;
+    height: 20px;
+    padding: 30px 30px 35px 30px;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 .hotel-video__scroll {
   position: relative;
-  top: -50px;
 
-  margin: 0 auto;
-  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 45px;
 
   background-color: #000000;
@@ -22,11 +46,7 @@
 }
 
 .hotel-video__scroll-line {
-  position: absolute;
-  top: 45%;
-  left: 8%;
-
-  width: 235px;
+  width: 85%;
   height: 3px;
 
   background-color: $base-bg-color;
@@ -35,8 +55,7 @@
 
 .hotel-video__scroll-toggle {
   position: absolute;
-  top: 39%;
-  left: 20%;
+  left: 100px;
 
   width: 9px;
   height: 9px;
@@ -44,33 +63,6 @@
   background-color: $base-bg-color;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.hotel-video__controls {
-  position: relative;
-  top: -50px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  width: 280px;
-  height: 66px;
-
-  background-color: $gray-dark;
-
-  button {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 30px 30px 35px 30px;
-
-    vertical-align: center;
-
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
 }
 
 .hotel-video__replay {
@@ -92,19 +84,29 @@
     height: 500px;
   }
 
-  .hotel-video__scroll {
-    top: -99px;
+  .hotel-video__controls {
+    position: absolute;
+    bottom: 0;
+    top: auto;
 
     width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #000000;
+    opacity: 0.6;
+  }
+
+  .hotel-video__scroll {
+    order: 2;
+    width: 72%;
     height: 93px;
+    margin: 0;
     box-sizing: border-box;
   }
 
   .hotel-video__scroll-line {
-    top: 49%;
-    left: 13%;
-
-    width: 64%;
+    width: 90%;
   }
 
   .hotel-video__scroll-toggle {
@@ -112,22 +114,28 @@
     left: 30%;
   }
 
-  .hotel-video__controls {
-    position: absolute;
-    bottom: 0;
-    top: auto;
-
-    width: 100%;
-    height: 93px;
-    box-sizing: border-box;
-
-    background-color: transparent;
+  .hotel-video__replay {
+    order: 1;
   }
+
+  .hotel-video__subtitles {
+    order: 3;
+  }
+
+  .hotel-video__fullscreen {
+    order: 4;
+  }
+
+
 }
 
 @media #{$desktop-widths} {
   .hotel-video {
     width: 800px;
     height: 500px;
+  }
+
+  .hotel-video__scroll {
+    width: 77%;
   }
 }
