@@ -1,8 +1,16 @@
 .hotel-features {
   background-color: $base-bg-color;
-  outline: 1px solid green;
 }
 
 .hotel-features__list {
-  @include clearfix();
+}
+
+//---------------ПЛАНШЕТ----------------------
+
+@media #{$tablet-widths} {
+  .hotel-features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

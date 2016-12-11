@@ -1,22 +1,23 @@
 .content-header {
-  padding: 46px 30px 32px 30px;
+  padding: 40px 30px 42px 30px;
 
   font: 14px / 26px $base-font;
   text-align: center;
 
   background-color: $base-bg-color;
-  outline: 1px solid green;
 }
 
 .content-header__title {
-  margin-bottom: 42px;
+  margin-bottom: 27px;
 
   font: bold 18px / 26px $base-font;
 }
 
+//---------------ПЛАНШЕТ----------------------
+
 @media #{$tablet-widths} {
   .content-header {
-    padding: 46px 165px 32px 165px;
+    padding: 50px 130px;
   }
 
   .content-header__title {
@@ -28,8 +29,10 @@
   }
 }
 
+//--------------ДЕКСТОП---------------------------
+
 @media #{$desktop-widths} {
   .content-header {
-    padding: 46px 380px 32px 380px;
+    padding: 50px 350px 52px;
   }
 }

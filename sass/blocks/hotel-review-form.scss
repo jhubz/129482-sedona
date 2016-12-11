@@ -123,6 +123,7 @@
   font: bold 18px / 26px $base-font;
 
   text-transform: none;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -140,21 +141,7 @@
 
 .hotel-review-form__checkbox {
   display: none;
-  /*
-  &:checked + label span::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 13px;
 
-  width: 15px;
-  height: 3px;
-
-  background: #000000;
-  transform: rotate(45deg);
-  border-radius: 1px;
-}
-  */
   &:checked + label::after {
     content: "";
     position: absolute;
@@ -177,6 +164,7 @@
   font: bold 18px / 26px $base-font;
 
   text-transform: none;
+  cursor: pointer;
 
   &::before {
     content: "";

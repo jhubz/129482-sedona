@@ -1,17 +1,20 @@
 .hotel-feature {
   text-align: center;
 
-  outline: 1px solid green;
+  border-bottom: 1px solid #d6d6d6;
+
+  &:last-child {
+    border: none;
+  }
 }
 
 .hotel-feature__text {
-  padding: 33px 35px;
+  padding: 27px 35px;
 
   background-color: #eeeeee;
-  border-bottom: 1px solid #d6d6d6;
 
   &--photo {
-    padding: 46px 20px;
+    padding: 40px 20px 39px;
 
     background-color: $add-bg-color;
     color: $base-bg-color;
@@ -19,13 +22,13 @@
 }
 
 .hotel-feature__name {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   font: bold 18px / 26px $base-font;
 }
 
 .hotel-feature__number {
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 
 .hotel-feature__photo {
@@ -38,7 +41,7 @@
     img {
       height: 260px;
       width: auto;
-      margin-left: -100px;
+      margin-left: -101px;
     }
   }
 
@@ -46,34 +49,43 @@
     overflow: hidden;
 
     img {
-      margin-top: -60px;
+      width: 107%;
+      height: auto;
+      margin-top: -82px;
+      margin-left: -13px;
     }
   }
 }
 
+//---------------ПЛАНШЕТ----------------------
+
 @media #{$tablet-widths} {
   .hotel-feature {
-    @include clearfix();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    float: left;
+    border: none;
   }
 
   .hotel-feature__text {
     width: 166px;
-    padding: 37px 45px 36px 45px;
-
-    &--left {
-      float: left;
-    }
+    padding: 46px 45px 43px;
 
     &--right {
-      float: right;
+      order: 2;
     }
   }
 
   .hotel-feature__name {
     padding: 0 7px;
+    margin-bottom: 9px;
+
     font: bold 21px / 26px $base-font;
+  }
+
+  .hotel-feature__number {
+    margin-bottom: 22px;
   }
 
   .hotel-feature__photo {
@@ -96,21 +108,20 @@
         margin: 0;
       }
     }
-
-    &--left {
-      float: left;
-    }
-
-    &--right {
-      float: right;
-    }
   }
 }
 
+//--------------ДЕКСТОП---------------------------
+
 @media #{$desktop-widths} {
   .hotel-feature__text {
-    width: 280px;
-    padding: 47px 60px 48px 60px;
+    width: 270px;
+    padding: 45px 65px 65px;
+
+    &--photo {
+      width: 280px;
+      padding: 52px 60px 58px;
+    }
   }
 
   .hotel-feature__name {
