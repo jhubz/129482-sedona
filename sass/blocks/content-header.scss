@@ -1,38 +1,71 @@
 .content-header {
-  padding: 40px 30px 42px 30px;
+  padding: 40px 25px 42px;
 
   font: 14px / 26px $base-font;
   text-align: center;
 
   background-color: $base-bg-color;
+
+  &--inner {
+    padding-top: 38px;
+    padding-bottom: 17px;
+  }
 }
 
 .content-header__title {
   margin-bottom: 27px;
 
   font: bold 18px / 26px $base-font;
+
+  &--inner {
+    margin-bottom: 26px;
+  }
 }
 
-//---------------ПЛАНШЕТ----------------------
+.content-header__description {
+
+  &--inner {
+    line-height: 24px;
+  }
+}
+
+/*---------------ПЛАНШЕТ----------------------*/
 
 @media #{$tablet-widths} {
   .content-header {
     padding: 50px 130px;
+
+    &--inner {
+      padding: 74px 165px 29px;
+    }
   }
 
   .content-header__title {
-    font: bold 21px / 26px $base-font;
+    font-size: 21px;
 
     &--inner {
+      margin-bottom: 31px;
+
       font-size: 30px;
     }
   }
 }
 
-//--------------ДЕКСТОП---------------------------
+/*--------------ДЕКСТОП---------------------------*/
 
 @media #{$desktop-widths} {
   .content-header {
     padding: 50px 350px 52px;
+
+    &--inner {
+      padding: 112px 380px 71px;
+    }
+  }
+
+  .content-header__title {
+
+    &--inner {
+      margin-bottom: 30px;
+    }
   }
 }

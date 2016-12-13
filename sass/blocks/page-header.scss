@@ -36,12 +36,12 @@
 .page-header__photo-inner {
   height: 158px;
 
-  background: url(../img/text-sedona.svg) no-repeat center,
-    url(../img/bg-back-mobile@1x.jpg) no-repeat -232px -225px;
-  background-size: 70%, 250%;
+  background: url(../img/text-sedona.svg) no-repeat center 51px,
+                    url(../img/bg-back-mobile@1x.jpg) no-repeat -237px -247px;
+  background-size: 71%, 252%;
 }
 
-//---------------ПЛАНШЕТ----------------------
+/*---------------ПЛАНШЕТ----------------------*/
 
 @media #{$tablet-widths} {
   .page-header__logo {
@@ -61,14 +61,26 @@
 
   .page-header__photo-inner {
     height: 290px;
+
+    background-position: center 94px,
+                          -237px -247px;
+    background-size: 60%, 160%;
   }
 }
 
-//--------------ДЕКСТОП---------------------------
+/*--------------ДЕКСТОП---------------------------*/
 
 @media #{$desktop-widths} {
   .page-header__photo {
     background-size: 39%, 100%;
     background-position: center 76px, center;
+  }
+
+  .page-header__photo-inner {
+    height: 301px;
+
+    background-position: center 102px,
+                          -237px -247px;
+    background-size: 38%, 160%;
   }
 }

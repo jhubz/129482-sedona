@@ -1,5 +1,5 @@
 .hotel-photo {
-  padding: 22px 20px;
+  padding: 22px 20px 16px;
   box-sizing: border-box;
 
   border-top: 1px solid $gray;
@@ -10,12 +10,12 @@
 }
 
 .hotel-photo__image {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .hotel-photo__title {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 
   font: bold 14px / 24px $base-font;
 }
@@ -26,24 +26,45 @@
   text-transform: none;
 }
 
+.hotel-photo__description {
+  position: relative;
+}
+
 .hotel-photo__likes {
-  padding-left: 30px;
+  position: relative;
+
+  padding-left: 36px;
 
   font: bold 14px / 24px $base-font;
 
   color: #000000;
   text-decoration: none;
-  background: url(../img/icon-like.svg) no-repeat left;
-  background-size: 40%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background: url(../img/icon-like.svg) no-repeat 0 -1px;
+  }
 }
+
+/*-----------------ПЛАНШЕТ--------------------*/
 
 @media #{$tablet-widths} {
   .hotel-photo {
     padding: 0;
     width: 50%;
 
-
     border: none;
+
+    img {
+      height: 267px;
+    }
 
     &:first-child {
       width: 100%;
@@ -65,17 +86,39 @@
   }
 
   .hotel-photo__description {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content:stretch;
     padding: 0 20px;
+    margin-bottom: 8px;
   }
 
   .hotel-photo__author {
     order: 3;
     width: 100%;
   }
+
+  .hotel-photo__likes {
+    position: relative;
+    top: 12px;
+    left: 18px;
+
+    width: 50px;
+
+    text-align: left;
+
+    &::before {
+
+      top: 0;
+      left: 5px;
+    }
+  }
 }
+
+/*-----------------ДЕСКТОП--------------------*/
 
 @media #{$desktop-widths} {
   .hotel-photo {
@@ -83,7 +126,7 @@
 
     padding: 0;
     width: 400px;
-    height: 280px;
+    height: 267px;
 
     &:first-child {
       width: 100%;
@@ -98,7 +141,8 @@
   .hotel-photo__description {
     position: absolute;
     bottom: 0;
-    padding: 20px;
+    padding: 18px 20px;
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
 
