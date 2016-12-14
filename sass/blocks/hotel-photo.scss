@@ -89,24 +89,22 @@
     position: relative;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-content:stretch;
     padding: 0 20px;
     margin-bottom: 8px;
   }
 
-  .hotel-photo__author {
-    order: 3;
-    width: 100%;
+  .hotel-photo__description-title-author {
+    order: 1;
   }
 
   .hotel-photo__likes {
-    position: relative;
-    top: 12px;
-    left: 18px;
-
-    width: 50px;
+    order: 2;
+    align-self: center;
+    width: 34px;
+    margin-top: -6px;
 
     text-align: left;
 
@@ -156,5 +154,6 @@
 
   .hotel-photo__likes {
     color: $base-bg-color;
+    margin-top: 3px;
   }
 }

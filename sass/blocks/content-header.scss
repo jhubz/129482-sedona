@@ -7,8 +7,12 @@
   background-color: $base-bg-color;
 
   &--inner {
-    padding-top: 38px;
-    padding-bottom: 17px;
+    padding: 38px 25px 17px;
+
+    &--form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
 
@@ -37,6 +41,10 @@
 
     &--inner {
       padding: 74px 165px 29px;
+
+      br {
+        display: none;
+      }
     }
   }
 

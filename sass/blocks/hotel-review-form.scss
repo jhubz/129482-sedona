@@ -35,6 +35,10 @@
 
   font: bold 18px / 26px $base-font;
   text-align: center;
+
+  &--emotions {
+    margin-bottom: 19px;
+  }
 }
 
 .hotel-review-form__field-container {
@@ -97,12 +101,18 @@
 }
 
 .hotel-review-form__text-field {
-  padding: 21px;
+  padding: 16px 21px;
   width: 100%;
+
+  font: bold 18px / 26px $base-font;
 
   background-color: $gray-dark;
   border: none;
   outline: none;
+
+  &::placeholder {
+    color: black;
+  }
 }
 
 .hotel-review-form__phone-error {
@@ -203,9 +213,12 @@
 
 .hotel-review-form__comment {
   width: 280px;
-  padding: 15px;
+  height: 160px;
+  padding: 13px 20px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  font: bold 18px / 26px $base-font;
 
   background-color: $gray-dark;
   border: none;
@@ -364,8 +377,7 @@
 
   .hotel-review-form__comment {
     width: 650px;
-    height: 160px;
-    padding: 20px;
+    padding: 16px 20px;
   }
 
   .hotel-review-form__submit {
