@@ -1,5 +1,5 @@
 .hotel-services {
-  padding: 0 20px;
+  padding: 10px 20px 0;
   margin: 0;
 
   text-align: left;
@@ -9,76 +9,95 @@
 
 .hotel-services__item {
   padding-left: 50px;
-  padding-top: 40px;
-
-  background: no-repeat 0 30px;
-  background-size: 15%;
+  padding-top: 25px;
+  margin-bottom: 3px;
 
   &--housing {
-    background-image: url(../img/icon-house.svg);
+    background: url(../img/icon-house.svg) no-repeat 0 16px;
+    background-size: 14%;
   }
 
   &--souvenirs {
-    background-image: url(../img/icon-gift.svg);
+    background: url(../img/icon-gift.svg) no-repeat 4px 13px;
+    background-size: 12%;
   }
 
   &--food {
-    background-image: url(../img/icon-burger.svg);
+    background: url(../img/icon-burger.svg)no-repeat -1px 19px;
+    background-size: 14%;
   }
 
   &:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 }
 
 .hotel-services__name {
-  margin-bottom: 26px;
+  margin-bottom: 14px;
 
   font: bold 18px / 26px $base-font;
 }
 
+/*----------------ПЛАНШЕТ------------------*/
+
 @media #{$tablet-widths} {
   .hotel-services {
-    @include clearfix;
+    display: flex;
+    flex-direction: row;
 
     padding: 0;
-    clear: both;
   }
 
   .hotel-services__item {
-    width: 166px;
-    padding: 160px 45px 65px 45px;
+    width: 256px;
+    padding: 160px 50px 57px;
+    box-sizing: border-box;
 
     text-align: center;
     vertical-align: top;
 
-    background-position: center 50px;
+    background-position: center 62px;
     background-size: 30%;
 
-    &--housing {
-      float: left;
-    }
-
     &--souvenirs {
-      float: right;
-      background-position: center 40px;
-    }
+      order: 3;
+      padding-left: 45px;
+      padding-right: 45px;
 
-    &--food {
-      float: left;
+      background-position: center 57px;
+      background-size: 25%;
     }
 
     &:last-child {
       padding-bottom: 0;
     }
   }
+
+  .hotel-services__name {
+    margin-bottom: 21px;
+
+    font-size: 21px;
+  }
 }
+
+/*----------------ДЕСКТОП------------------*/
 
 @media #{$desktop-widths} {
   .hotel-services__item {
-    width: 300px;
-    padding: 160px 50px 65px 50px;
+    width: 400px;
+    padding: 158px 50px 78px;
+    margin-bottom: 5px;
 
-    background-size: 20%;
+    background-size: 19%;
+
+    &--housing {
+      background-position: center 60px;
+    }
+
+    &--souvenirs {
+      padding: 158px 90px 78px;
+
+      background-size: 16%;
+    }
   }
 }

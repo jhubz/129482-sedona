@@ -1,18 +1,39 @@
 .hotel-map {
+  position: relative;
+
   height: 350px;
 
   text-align: center;
 
-  outline: 1px solid green;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 160px;
+    left: 144px;
+
+    width: 30px;
+    height: 30px;
+
+    background: transparent url(../img/icon-map-marker.svg) no-repeat center;
+  }
 }
+
+/*----------------ПЛАНШЕТ------------------*/
 
 @media #{$tablet-widths} {
   .hotel-map {
     img {
       width: 768px;
     }
+
+    &:after {
+      top: 161px;
+      left: 368px;
+    }
   }
 }
+
+/*----------------ДЕСКТОП------------------*/
 
 @media #{$desktop-widths} {
   .hotel-map {

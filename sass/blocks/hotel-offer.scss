@@ -1,25 +1,23 @@
 .hotel-offer {
-  padding: 33px 20px 50px 20px;
+  padding: 27px 20px 50px 20px;
 
   font: 14px / 24px $base-font;
   text-align: center;
-
-  outline: 1px solid green;
 }
 
 .hotel-offer__title {
-  margin-bottom: 32px;
+  margin-bottom: 19px;
 
   font: bold 21px / 26px $base-font;
 }
 
 .hotel-offer__description {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 }
 
 .hotel-offer__find {
   display: block;
-  padding: 15px 0;
+  padding: 16px 0;
 
   font: bold 21px / 26px $base-font;
 
@@ -37,24 +35,38 @@
   }
 }
 
+/*----------------ПЛАНШЕТ------------------*/
+
 @media #{$tablet-widths} {
   .hotel-offer {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 56px 155px 58px;
   }
 
   .hotel-offer__title {
-    font: bold 30px / 26px $base-font;
+    margin-bottom: 31px;
+
+    font-size: 30px;
   }
 
   .hotel-offer__description {
-    padding: 0 20px;
+    margin-bottom: 43px;
   }
 }
+
+/*----------------ДЕСКТОП------------------*/
 
 @media #{$desktop-widths} {
   .hotel-offer {
     padding-left: 370px;
     padding-right: 370px;
+    padding-bottom: 65px;
+  }
+
+  .hotel-offer__title {
+    margin-bottom: 30px;
+  }
+
+  .hotel-offer__description {
+    margin-bottom: 47px;
   }
 }

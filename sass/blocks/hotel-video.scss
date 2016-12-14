@@ -10,21 +10,24 @@
 }
 
 .hotel-video__controls {
-  position: relative;
-  top: -51px;
+  position: absolute;
+  top: 156px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 20px;
+  width: 280px;
 
   background-color: $gray-dark;
 
   button {
-    width: 20px;
-    height: 20px;
-    padding: 30px 30px 35px 30px;
+    width: 35px;
+    height: 35px;
+    /*padding: 30px 33px 35px;*/
+    margin-top: 15px;
+    margin-bottom: 16px;
 
     outline: none;
     border: none;
@@ -33,8 +36,6 @@
 }
 
 .hotel-video__scroll {
-  position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +56,8 @@
 
 .hotel-video__scroll-toggle {
   position: absolute;
-  left: 100px;
+  top: 19px;
+  left: 58px;
 
   width: 9px;
   height: 9px;
@@ -66,17 +68,23 @@
 }
 
 .hotel-video__replay {
+  margin-left: 15px;
+
   background: url(../img/icon-video-replay.svg) no-repeat center;
 }
 
 .hotel-video__subtitles {
-  margin-left: auto;
+  margin-right: -100px;
   background: url(../img/icon-video-subtitles.svg) no-repeat center;
 }
 
 .hotel-video__fullscreen {
+  margin-right: 16px;
+
   background: url(../img/icon-video-fullscreen.svg) no-repeat center;
 }
+
+/*------------------ПЛАНШЕТ------------------*/
 
 @media #{$tablet-widths} {
   .hotel-video {
@@ -99,35 +107,38 @@
 
   .hotel-video__scroll {
     order: 2;
-    width: 72%;
+    width: 59%;
     height: 93px;
     margin: 0;
     box-sizing: border-box;
   }
 
   .hotel-video__scroll-line {
-    width: 90%;
+    width: 100%;
   }
 
   .hotel-video__scroll-toggle {
-    top: 46%;
-    left: 30%;
+    top: 45%;
+    left: 32%;
   }
 
   .hotel-video__replay {
     order: 1;
+    margin-left: 26px;
   }
 
   .hotel-video__subtitles {
     order: 3;
+    margin-right: -17px;
   }
 
   .hotel-video__fullscreen {
     order: 4;
+    margin-right: 35px;
   }
-
-
 }
+
+/*------------------ДЕСКТОП------------------*/
 
 @media #{$desktop-widths} {
   .hotel-video {
@@ -135,7 +146,29 @@
     height: 500px;
   }
 
+  .hotel-video__controls {
+    justify-content: flex-start;
+  }
+
   .hotel-video__scroll {
-    width: 77%;
+    width: 68%;
+    margin-right: 37px;
+  }
+
+  .hotel-video__scroll-line {
+    width: 100%;
+  }
+
+  .hotel-video__scroll-toggle {
+    left: 26%;
+  }
+
+  .hotel-video__replay {
+    margin-left: 26px;
+    margin-right: 31px;
+  }
+
+  .hotel-video__fullscreen {
+    margin-left: auto;
   }
 }

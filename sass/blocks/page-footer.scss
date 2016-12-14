@@ -1,20 +1,19 @@
 .page-footer {
-  padding: 40px 85px 23px 85px;
+  padding: 36px 75px 23px 75px;
 
   font: 14px / 26px $base-font;
   text-align: center;
-
-  outline: 1px solid green;
 }
 
 .page-footer__hashtag {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 
   font: bold 21px / 26px $base-font;
 }
 
 .page-footer__copyright {
   display: inline-block;
+  padding-left: 5px;
 
   vertical-align: middle;
 
@@ -22,7 +21,8 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin-top: -5px;
+    margin-top: -6px;
+    margin-left: 2px;
 
     font-size: 0;
     vertical-align: top;
@@ -31,23 +31,28 @@
   }
 }
 
+/*----------------ПЛАНШЕТ------------------*/
+
 @media #{$tablet-widths} {
   .page-footer {
     @include clearfix();
 
-    padding: 40px 60px 0 60px;;
+    padding: 35px 60px 0;
   }
 
   .page-footer__hashtag {
     float: left;
-    margin: 10px 100px 0 0;
+    margin: 10px 111px 0 0;
   }
 
   .page-footer__copyright {
     float: right;
     margin-top: 10px;
+    margin-right: -6px;
   }
 }
+
+/*----------------ДЕСКТОП------------------*/
 
 @media #{$desktop-widths} {
   .page-footer {
@@ -57,6 +62,10 @@
   }
 
   .page-footer__hashtag {
-    margin: 10px 240px 0 0;
+    margin: 11px 255px 0 -18px;
+  }
+
+  .page-footer__copyright {
+    margin-right: -23px;
   }
 }

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //justify-content: center;
-
-  outline: 1px solid green;
+  padding-top: 10px;
 }
+
+/*-----------------ПЛАНШЕТ--------------------*/
 
 @media #{$tablet-widths} {
   .hotel-photos {
@@ -15,8 +15,10 @@
   }
 }
 
+/*-----------------ДЕСКТОП--------------------*/
+
 @media #{$desktop-widths} {
   .hotel-photos {
-    padding: 40px 0;
+    padding: 0;
   }
 }

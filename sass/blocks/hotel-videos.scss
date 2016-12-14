@@ -1,15 +1,15 @@
 .hotel-videos {
-  text-align: center;
+  padding-bottom: 100px;
 
-  outline: 1px solid green;
+  text-align: center;
 }
 
 .hotel-videos__header {
-  padding: 40px 25px;
+  padding: 33px 25px 35px;
 }
 
 .hotel-videos__title {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 
   font: bold 18px / 26px $base-font;
 }
@@ -18,22 +18,32 @@
   font: 14px / 24px $base-font;
 }
 
+/*-----------------ПЛАНШЕТ--------------------*/
+
 @media #{$tablet-widths} {
   .hotel-videos {
     padding-bottom: 40px;
   }
 
   .hotel-videos__header {
-    padding: 40px 165px;
+    padding: 26px 165px 73px;
   }
 
   .hotel-videos__title {
+    margin-bottom: 30px;
+
     font-size: 30px;
   }
 }
 
+/*-----------------ДЕСКТОП--------------------*/
+
 @media #{$desktop-widths} {
+  .hotel-videos {
+    padding-bottom: 86px;
+  }
+
   .hotel-videos__header {
-    padding: 40px 390px;
+    padding: 70px 390px 72px;
   }
 }

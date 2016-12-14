@@ -1,7 +1,7 @@
 body {
   font: 14px / 21px $base-font;
 
-  background: $base-bg-color;
+  background: $gray-dark;
   color: #000000;
   text-transform: uppercase;
 }
@@ -12,4 +12,10 @@ h2,
 h3{
   margin: 0;
   padding: 0;
+}
+
+@media #{$desktop-widths} {
+  .desktop-hidden {
+    display: none;
+  }
 }

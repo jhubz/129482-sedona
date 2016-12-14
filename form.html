@@ -34,16 +34,16 @@
         </div>
       </header>
 
-      <div class="content-header">
+      <div class="content-header  content-header--inner  content-header--inner--form">
         <h2 class="content-header__title  content-header__title--inner">Оставьте свой отзыв</h2>
-        <p class="content-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="content-header__description  content-header__description--inner">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <section class="hotel-review">
 
         <form class="hotel-review-form" action="#" method="post">
           <div class="hotel-review-form__container  hotel-review-form__container--name">
-            <h3 class="hotel-review-form__title">Представьтесь:</h3>
+            <h3 class="hotel-review-form__title  hotel-review-form__title--name">Представьтесь:</h3>
 
             <div class="hotel-review-form__field-container">
               <label class="hotel-review-form__text-field-label" for="name-id">Имя*:</label>
@@ -65,20 +65,20 @@
             <h3 class="hotel-review-form__title  hotel-review-form__title--contacts">Контактная информация:</h3>
 
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--phone">
-              <label class="hotel-review-form__text-field-label  hotel-review-form__text-field-label--phone" for="phone-id">Контактный телефон*:</label>
-              <input class="hotel-review-form__text-field" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
+              <label class="hotel-review-form__text-field-label  hotel-review-form__text-field-label--phone" for="phone-id"><span class="desktop-hidden">Контактный </span>телефон*:</label>
+              <input class="hotel-review-form__text-field  hotel-review-form__text-field--phone" id="phone-id" type="phone" name="phone" placeholder="Введите телефон">
               <div class="hotel-review-form__phone-error">Ошибка, перепроверьте номер</div>
             </div>
 
 
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--email">
               <label class="hotel-review-form__text-field-label  hotel-review-form__text-field-label--email" for="email-id">Электронная почта*:</label>
-              <input class="hotel-review-form__text-field" id="email-id" type="email" name="email" placeholder="Введите e-mail">
+              <input class="hotel-review-form__text-field    hotel-review-form__text-field--email" id="email-id" type="email" name="email" placeholder="Введите e-mail">
             </div>
           </div>
 
           <div class="hotel-review-form__container   hotel-review-form__container--impression">
-            <h3 class="hotel-review-form__title">Ваше общее впечатление:</h3>
+            <h3 class="hotel-review-form__title  hotel-review-form__title--impression">Ваше общее впечатление:</h3>
 
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--radio">
               <input class="hotel-review-form__radio" id="impression-good-id" type="radio" name="impression" value="Скорее положительное" checked>
@@ -103,7 +103,7 @@
           </div>
 
           <div class="hotel-review-form__container  hotel-review-form__container--attraction">
-            <h3 class="hotel-review-form__title">Посещенные достопримечательности:</h3>
+            <h3 class="hotel-review-form__title  hotel-review-form__title--attraction">Посещенные достопримечательности:</h3>
 
             <div class="hotel-review-form__field-container  hotel-review-form__field-container--checkbox">
               <input class="hotel-review-form__checkbox" id="attraction-devilBridge-id" type="checkbox" name="attraction" value="Мост Дьявола" checked>
@@ -135,14 +135,14 @@
           </div>
 
           <div class="hotel-review-form__container  hotel-review-form__container--emotions">
-            <h3 class="hotel-review-form__title">Опишите свои эмоции:</h3>
+            <h3 class="hotel-review-form__title  hotel-review-form__title--emotions">Опишите свои эмоции:</h3>
             <div class="hotel-review-form__field-container">
-              <textarea class="hotel-review-form__comment" id="emotions-id" name="emotions" rows=10 placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="hotel-review-form__comment" id="emotions-id" name="emotions" rows=8 placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
 
           <input class="hotel-review-form__submit" type="submit" value="Отправить отзыв">
-          <span class="hotel-review-form__footnote">* - Обязательные поля</span>
+          <span class="hotel-review-form__footnote">* &ndash; Обязательные поля</span>
         </form>
       </section>
 

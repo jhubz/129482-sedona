@@ -5,13 +5,13 @@
 }
 
 .page-header__nav-toggle {
-  margin: 8px 0 8px 240px;
+  margin: 6px 0 9px 268px;
   width: 40px;
   height: 40px;
 
   font-size: 0;
 
-  background-color: $add-bg-color;
+  background: $base-bg-color url(../img/icon-menu.svg) no-repeat center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -19,7 +19,7 @@
 
 .page-header__logo {
   position: absolute;
-  top: 160px;
+  top: 223px;
   left: 50%;
 
   margin-left: -51px;
@@ -28,23 +28,24 @@
 .page-header__photo {
   height: 389px;
 
-  background: url(../img/text-sedona-index.svg) no-repeat center,
-    url(../img/bg-back-mobile@1x.jpg) no-repeat center;
-  background-size: 85%, auto;
-  outline: 1px solid green;
+  background: url(../img/text-sedona-index.svg) no-repeat center 91px,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat center;
+  background-size: 88%, auto;
 }
 
 .page-header__photo-inner {
   height: 158px;
 
-  background: url(../img/text-sedona.svg) no-repeat center,
-    url(../img/bg-back-mobile@1x.jpg) no-repeat -232px -225px;
-  background-size: 70%, 250%;
+  background: url(../img/text-sedona.svg) no-repeat center 51px,
+              url(../img/bg-back-mobile@1x.jpg) no-repeat -237px -247px;
+  background-size: 71%, 252%;
 }
+
+/*---------------ПЛАНШЕТ----------------------*/
 
 @media #{$tablet-widths} {
   .page-header__logo {
-    top: 0;
+    top: -1px;
   }
 
   .page-header__nav-toggle {
@@ -54,18 +55,32 @@
   .page-header__photo {
     height: 518px;
 
-    background-size: 59%, 133%;
+    background-size: 60%, 133%;
     background-position: center 77px, center;
   }
 
   .page-header__photo-inner {
     height: 290px;
+
+    background-position:  center 94px,
+                          -237px -247px;
+    background-size: 60%, 160%;
   }
 }
 
+/*--------------ДЕКСТОП---------------------------*/
+
 @media #{$desktop-widths} {
   .page-header__photo {
-    background-size: 40%, 100%;
-    background-position: center 58px, center;
+    background-size: 39%, 100%;
+    background-position: center 76px, center;
+  }
+
+  .page-header__photo-inner {
+    height: 301px;
+
+    background-position:  center 102px,
+                          -237px -247px;
+    background-size: 38%, 160%;
   }
 }
