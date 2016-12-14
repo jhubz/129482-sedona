@@ -38,13 +38,6 @@
   font: bold 18px / 26px $base-font;
 }
 
-.hotel-services__description {
-
-  br {
-    display: none;
-  }
-}
-
 /*----------------ПЛАНШЕТ------------------*/
 
 @media #{$tablet-widths} {
@@ -85,13 +78,6 @@
 
     font-size: 21px;
   }
-
-  .hotel-services__description {
-
-    br {
-      display: block;
-    }
-  }
 }
 
 /*----------------ДЕСКТОП------------------*/
@@ -109,7 +95,7 @@
     }
 
     &--souvenirs {
-      padding: 158px 65px 78px;
+      padding: 158px 90px 78px;
 
       background-size: 16%;
     }

@@ -4,10 +4,6 @@
   background-color: $base-bg-color;
 }
 
-.page-header__main-nav-controls {
-  box-shadow: 0 -10px 8px -5px #678fa8;
-}
-
 .page-header__nav-toggle {
   margin: 6px 0 9px 268px;
   width: 40px;
@@ -16,22 +12,6 @@
   font-size: 0;
 
   background: $base-bg-color url(../img/icon-menu.svg) no-repeat center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.page-header__nav-close {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-
-  width: 40px;
-  height: 40px;
-
-  font-size: 0;
-
-  background: transparent url(../img/icon-cross.svg) no-repeat center;
   border: none;
   outline: none;
   cursor: pointer;
@@ -69,10 +49,6 @@
   }
 
   .page-header__nav-toggle {
-    display: none;
-  }
-
-  .page-header__nav-close {
     display: none;
   }
 
