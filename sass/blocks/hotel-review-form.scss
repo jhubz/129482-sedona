@@ -64,6 +64,12 @@
     width: 100%;
   }
 
+  &--radio {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+
   &--phone {
     position: relative;
 
@@ -121,6 +127,7 @@
 
 .hotel-review-form__text-field {
   padding: 16px 21px;
+  min-width: 0;
   width: 100%;
 
   font: bold 18px / 26px $base-font;
@@ -438,6 +445,10 @@
         order: 4;
       }
     }
+
+    &--radio {
+      padding-bottom: 16px;
+    }
   }
 
   .hotel-review-form__text-field-label {
@@ -470,7 +481,7 @@
   }
 
   .hotel-review-form__radio-label {
-    padding: 15px 64px 17px 76px;
+    padding: 15px 64px 17px 75px;
 
     &::after {
       left: 30px;
