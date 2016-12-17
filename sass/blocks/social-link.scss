@@ -7,15 +7,33 @@
 
   background-color: $add-bg-color;
 
+  @include btn();
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin: 13px auto;
+  }
+
   &--tw {
-    background: url(../img/icon-twitter.svg) no-repeat center;
+    svg {
+      width: 18px;
+      height: 18px;
+      margin: 14px auto;
+    }
   }
 
   &--fb {
-    background: url(../img/icon-facebook.svg) no-repeat center;
+    svg {
+      width: 18px;
+      height: 18px;
+      margin: 14px auto;
+    }
   }
 
-  &--yt {
-    background: url(../img/icon-youtube.svg) no-repeat center;
+  &:active {
+    .social-link-fill {
+      fill: #88b6d1;
+    }
   }
 }

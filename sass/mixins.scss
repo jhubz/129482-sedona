@@ -9,13 +9,19 @@
   &:hover {
     background-color: #669ec0;
   }
+
   &:active {
     background-color: #5496bd;
     color: #94b9d2;
   }
+
+  &:disabled {
+    background-color: $gray;
+  }
 }
 
 @mixin clearfix() {
+
   &::after {
     content: "";
 

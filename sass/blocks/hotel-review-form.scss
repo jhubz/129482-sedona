@@ -6,22 +6,32 @@
 }
 
 .hotel-review-form__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   padding: 18px 20px 5px;
 
   text-align: left;
 
   border-top: 1px solid $gray;
 
+  &--name {
+    justify-content: flex-start;
+  }
+
   &--contacts {
     padding-bottom: 8px;
   }
 
   &--impression {
+    justify-content: flex-start;
     padding-top: 18px;
     padding-bottom: 13px;
   }
 
   &--attraction {
+    justify-content: flex-start;
     padding-bottom: 1px;
   }
 
@@ -36,6 +46,10 @@
   font: bold 18px / 26px $base-font;
   text-align: center;
 
+  &--impression {
+    width: 100%;
+  }
+
   &--emotions {
     margin-bottom: 19px;
   }
@@ -46,6 +60,10 @@
   align-items: center;
   margin-bottom: 20px;
 
+  &--name {
+    width: 100%;
+  }
+
   &--phone {
     position: relative;
 
@@ -55,7 +73,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 33px;
+      top: 32px;
       right: 0;
 
       width: 57px;
@@ -69,6 +87,7 @@
     position: relative;
 
     flex-wrap: wrap;
+    width: 100%;
 
     &::after {
       content: "";
@@ -113,6 +132,15 @@
   &::placeholder {
     color: black;
   }
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  &:focus {
+    background-color: $base-bg-color;
+    box-shadow: inset 0 0 0 4px $gray;
+  }
 }
 
 .hotel-review-form__phone-error {
@@ -130,18 +158,7 @@
   display: none;
 
   &:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10%;
-
-    margin-left: -10px;
-    margin-top: -6px;
-    width: 21px;
-    height: 21px;
-
-    background: #333333;
-    border-radius: 50%;
+    display: block;
   }
 }
 
@@ -168,21 +185,47 @@
     background-color: $gray-dark;
     border-radius: 50%;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    display: none;
+    margin-left: -9px;
+    margin-top: -6px;
+    width: 21px;
+    height: 21px;
+
+    background: #333333;
+    border-radius: 50%;
+  }
+
+  &:hover {
+
+    &::before {
+      background-color: $gray;
+    }
+  }
+
+  &:active {
+
+    &::before {
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      background-color: #a4a4a4;
+    }
+  }
 }
 
 .hotel-review-form__checkbox {
   display: none;
 
   &:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 15px;
-
-    width: 55px;
-    height: 55px;
-
-    background: url(../img/icon-tick.svg) no-repeat 1px -2px;
+    display: block;
   }
 }
 
@@ -209,6 +252,40 @@
     background-color: $gray-dark;
     border-radius: 5px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    width: 55px;
+    height: 55px;
+
+    background: url(../img/icon-tick.svg) no-repeat center;
+    border-radius: 5px;
+  }
+
+  &:hover {
+
+    &::before {
+      background-color: $gray;
+    }
+  }
+
+  &:active {
+
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    background: none;
+  }
 }
 
 .hotel-review-form__comment {
@@ -222,7 +299,21 @@
 
   background-color: $gray-dark;
   border: none;
+  outline: none;
   resize: none;
+
+  &::placeholder {
+    color: black;
+  }
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  &:focus {
+    background-color: $base-bg-color;
+    box-shadow: inset 0 0 0 4px $gray;
+  }
 }
 
 .hotel-review-form__submit {
@@ -261,6 +352,7 @@
     &--name {
       order: 2;
       padding-left: 58px;
+      padding-bottom: 14px;
     }
 
     &--contacts {
@@ -297,6 +389,7 @@
 
     &--name {
       text-align: left;
+      margin-bottom: 57px;
     }
 
     &--contacts {
@@ -318,6 +411,11 @@
   }
 
   .hotel-review-form__field-container {
+
+    &--name {
+      margin-bottom: 20px;
+    }
+
     &--phone {
       display: flex;
     }
@@ -372,7 +470,11 @@
   }
 
   .hotel-review-form__radio-label {
-    padding: 15px 45px 17px 76px;
+    padding: 15px 64px 17px 76px;
+
+    &::after {
+      left: 30px;
+    }
   }
 
   .hotel-review-form__comment {
@@ -521,5 +623,9 @@
 
   .hotel-review-form__comment {
     width: 960px;
+  }
+
+  .hotel-review-form__submit {
+    padding-left: 15px;
   }
 }
