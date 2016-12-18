@@ -21,18 +21,7 @@
 
   font: bold 21px / 26px $base-font;
 
-  background-color: $add-bg-color;
-  color: #ffffff;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: #94b9d2;
-  }
+  @include btn();
 }
 
 /*----------------ПЛАНШЕТ------------------*/

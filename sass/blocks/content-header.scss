@@ -1,5 +1,6 @@
 .content-header {
   padding: 40px 25px 42px;
+  padding: 40px 25px 27px;
 
   font: 14px / 26px $base-font;
   text-align: center;
@@ -8,11 +9,11 @@
 
   &--inner {
     padding: 38px 25px 17px;
+  }
 
-    &--form {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+  &--inner-form {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -63,6 +64,10 @@
 
     &--inner {
       padding: 112px 380px 71px;
+    }
+
+    &--inner-form {
+      padding-bottom: 59px;
     }
   }
 

@@ -20,18 +20,30 @@
   margin: 0 20px;
   width: 280px;
 
-  background-color: $gray-dark;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, $gray-dark 40%);
 
   button {
     width: 35px;
     height: 35px;
-    /*padding: 30px 33px 35px;*/
-    margin-top: 15px;
+    margin-top: 17px;
     margin-bottom: 16px;
 
+    background-color: transparent;
     outline: none;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      .hotel-video-button-fill {
+        fill: #333333;
+      }
+    }
+
+    &:active {
+      .hotel-video-button-fill {
+        fill: #c1c1c1;
+      }
+    }
   }
 }
 
@@ -42,8 +54,7 @@
   width: 100%;
   height: 45px;
 
-  background-color: #000000;
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hotel-video__scroll-line {
@@ -56,7 +67,7 @@
 
 .hotel-video__scroll-toggle {
   position: absolute;
-  top: 19px;
+  top: 18px;
   left: 58px;
 
   width: 9px;
@@ -69,19 +80,14 @@
 
 .hotel-video__replay {
   margin-left: 15px;
-
-  background: url(../img/icon-video-replay.svg) no-repeat center;
 }
 
 .hotel-video__subtitles {
-  margin-right: -100px;
-  background: url(../img/icon-video-subtitles.svg) no-repeat center;
+  margin-left: 92px;
 }
 
 .hotel-video__fullscreen {
   margin-right: 16px;
-
-  background: url(../img/icon-video-fullscreen.svg) no-repeat center;
 }
 
 /*------------------ПЛАНШЕТ------------------*/
@@ -101,8 +107,12 @@
     margin: 0;
     box-sizing: border-box;
 
-    background-color: #000000;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: none;
+  }
+
+  .hotel-video-button-fill {
+    fill: #ffffff;
   }
 
   .hotel-video__scroll {
@@ -111,6 +121,8 @@
     height: 93px;
     margin: 0;
     box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .hotel-video__scroll-line {
@@ -125,11 +137,12 @@
   .hotel-video__replay {
     order: 1;
     margin-left: 26px;
+    margin-right: 10px;
   }
 
   .hotel-video__subtitles {
     order: 3;
-    margin-right: -17px;
+    margin-left: 14px;
   }
 
   .hotel-video__fullscreen {
@@ -164,8 +177,12 @@
   }
 
   .hotel-video__replay {
-    margin-left: 26px;
-    margin-right: 31px;
+    margin-left: 24px;
+    margin-right: 28px;
+  }
+
+  .hotel-video__subtitles {
+    margin-left: 0;
   }
 
   .hotel-video__fullscreen {

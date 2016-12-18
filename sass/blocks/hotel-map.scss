@@ -8,7 +8,7 @@
   &:after {
     content: "";
     position: absolute;
-    top: 160px;
+    top: 158px;
     left: 144px;
 
     width: 30px;
@@ -39,6 +39,11 @@
   .hotel-map {
     img {
       width: 1200px;
+    }
+
+    &:after {
+      top: 161px;
+      left: 584px;
     }
   }
 }

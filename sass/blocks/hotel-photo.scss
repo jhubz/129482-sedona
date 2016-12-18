@@ -43,7 +43,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 55px;
+    top: -4px;
     left: 0;
 
     width: 25px;
@@ -104,12 +104,11 @@
     order: 2;
     align-self: center;
     width: 34px;
-    margin-top: -6px;
+    padding-bottom: 6px;
 
     text-align: left;
 
     &::before {
-
       top: 0;
       left: 5px;
     }
@@ -139,6 +138,7 @@
   .hotel-photo__description {
     position: absolute;
     bottom: 0;
+
     padding: 18px 20px;
     margin: 0;
     width: 100%;
@@ -155,5 +155,10 @@
   .hotel-photo__likes {
     color: $base-bg-color;
     margin-top: 3px;
+    padding-bottom: 0;
+
+    &::before {
+      background-image: url(../img/icon-like-desktop.svg);
+    }
   }
 }

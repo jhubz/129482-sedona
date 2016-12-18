@@ -19,6 +19,15 @@
     background-color: $add-bg-color;
     color: $base-bg-color;
   }
+
+  &--left {
+    padding-top: 55px;
+
+    background-image: url(../img/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center -22px;
+    background-size: 100%;
+  }
 }
 
 .hotel-feature__name {
@@ -32,29 +41,8 @@
 }
 
 .hotel-feature__photo {
-  height: 260px;
   width: 320px;
-
-  &--big {
-    overflow: hidden;
-
-    img {
-      height: 260px;
-      width: auto;
-      margin-left: -101px;
-    }
-  }
-
-  &--small {
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: auto;
-      margin-top: 0;
-      margin-left: 0;
-    }
-  }
+  height: 260px;
 }
 
 /*---------------ПЛАНШЕТ----------------------*/
@@ -83,6 +71,10 @@
       padding-right: 55px;
     }
 
+    &--left {
+      background-image: none;
+    }
+
     &--right {
       order: 2;
     }
@@ -100,25 +92,8 @@
   }
 
   .hotel-feature__photo {
-    height: 256px;
     width: 512px;
-
-    &--big {
-
-      img {
-        width: 100%;
-        margin: 0;
-      }
-    }
-
-    &--small {
-
-      img {
-        height: 256px;
-        width: 512px;
-        margin: 0;
-      }
-    }
+    height: 256px;
   }
 }
 
@@ -155,13 +130,20 @@
   }
 
   .hotel-feature__photo {
-    height: 256px;
     width: 800px;
+    height: 256px;
 
-    &--small {
+    overflow: hidden;
 
+    &--right {
       img {
-        width: 800px;
+        transform: translate(0, -72px);
+      }
+    }
+
+    &--left {
+      img {
+        transform: translate(0, -77px);
       }
     }
   }
