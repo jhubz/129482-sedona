@@ -46,6 +46,10 @@
   font: bold 18px / 26px $base-font;
   text-align: center;
 
+  &--name {
+    width: 100%;
+  }
+
   &--impression {
     width: 100%;
   }
@@ -160,7 +164,6 @@
   text-transform: none;
 }
 
-
 .hotel-review-form__radio {
   display: none;
 
@@ -196,12 +199,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 19px;
+    left: 18px;
 
     display: none;
-    margin-left: -9px;
-    margin-top: -6px;
     width: 21px;
     height: 21px;
 
@@ -475,8 +476,7 @@
 
   .hotel-review-form__radio {
     &:checked + label::after {
-      margin-left: -12px;
-      margin-top: -10px;
+      left: 18px;
     }
   }
 
@@ -515,7 +515,6 @@
 @media #{$desktop-widths} {
   .hotel-review-form {
     padding: 0 120px 68px 120px;
-    margin-top: -12px;
   }
 
   .hotel-review-form__container {

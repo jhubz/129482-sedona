@@ -83,7 +83,7 @@
 }
 
 .hotel-video__subtitles {
-  margin-right: -92px;
+  margin-left: 92px;
 }
 
 .hotel-video__fullscreen {
@@ -137,11 +137,12 @@
   .hotel-video__replay {
     order: 1;
     margin-left: 26px;
+    margin-right: 10px;
   }
 
   .hotel-video__subtitles {
     order: 3;
-    margin-right: -12px;
+    margin-left: 14px;
   }
 
   .hotel-video__fullscreen {
@@ -176,8 +177,12 @@
   }
 
   .hotel-video__replay {
-    margin-left: 26px;
-    margin-right: 31px;
+    margin-left: 24px;
+    margin-right: 28px;
+  }
+
+  .hotel-video__subtitles {
+    margin-left: 0;
   }
 
   .hotel-video__fullscreen {

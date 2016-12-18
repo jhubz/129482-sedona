@@ -40,9 +40,7 @@
 .page-header__logo {
   position: absolute;
   top: 223px;
-  left: 50%;
-
-  margin-left: -51px;
+  left: 109px;
 
   &--closed-menu {
     top: 0;
@@ -92,6 +90,7 @@
 @media #{$tablet-widths} {
   .page-header__logo {
     top: 0;
+    left: 333px;
   }
 
   .page-header__nav-controls {
@@ -142,7 +141,7 @@
 
 @media #{$desktop-widths} {
   .page-header__logo {
-    margin-left: -94px;
+    margin-left: 172px;
 
     img {
       width: 100%;

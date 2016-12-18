@@ -137,13 +137,13 @@
 
     &--right {
       img {
-        margin-top: -72px;
+        transform: translate(0, -72px);
       }
     }
 
     &--left {
       img {
-        margin-top: -77px;
+        transform: translate(0, -77px);
       }
     }
   }

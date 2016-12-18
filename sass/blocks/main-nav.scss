@@ -24,22 +24,19 @@
   &--current {
     cursor: pointer;
   }
+}
 
-  a {
-    @include btn;
+.main-nav__link {
+  @include btn;
 
-    display: block;
-    padding: 8px 0;
+  display: block;
+  padding: 8px 0;
 
-    box-shadow: inset 0 -1px 0 0 #678fa8,
-                inset 0 1px 0 0 #9ac2db;
-  }
+  box-shadow: inset 0 -1px 0 0 #678fa8,
+              inset 0 1px 0 0 #9ac2db;
 
-  &:last-child {
-
-    a {
-      box-shadow: inset 0 1px 0 0 #9ac2db;
-    }
+  &--last {
+    box-shadow: inset 0 1px 0 0 #9ac2db;
   }
 }
 
@@ -63,28 +60,6 @@
 
     font: bold 14px / 26px $base-font;
 
-    a {
-      background-color: $base-bg-color;
-      color: #000000;
-      box-shadow: none;
-
-      &:hover {
-        background-color: $base-bg-color;
-        color: $add-bg-color;
-      }
-
-      &:active {
-        color: #cacaca;
-      }
-    }
-
-    &:last-child {
-
-      a {
-        box-shadow: none;
-      }
-    }
-
     &:nth-child(1) {
       margin-right: 52px;
     }
@@ -92,19 +67,36 @@
     &:nth-child(3) {
       margin-left: auto;
     }
+  }
+
+  .main-nav__link {
+    background-color: $base-bg-color;
+    color: #000000;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $base-bg-color;
+      color: $add-bg-color;
+    }
+
+    &:active {
+      color: #cacaca;
+    }
 
     &--current {
-      a {
-        color: #766357;
+      color: #766357;
 
-        &:hover {
-          color: #604e43;
-        }
-
-        &:active {
-          color: #dbd8d5;
-        }
+      &:hover {
+        color: #604e43;
       }
+
+      &:active {
+        color: #dbd8d5;
+      }
+    }
+
+    &--last {
+      box-shadow: none;
     }
   }
 }
