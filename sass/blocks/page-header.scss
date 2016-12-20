@@ -25,7 +25,7 @@
   cursor: pointer;
 
   &--open {
-    background-image: url(../img/icon-menu.svg);
+    background-image: url(../img/icons/icon-menu.svg);
   }
 
   &--close {
@@ -33,7 +33,7 @@
     top: 2px;
     left: 0;
 
-    background-image: url(../img/icon-cross.svg);
+    background-image: url(../img/icons/icon-cross.svg);
   }
 }
 
@@ -71,7 +71,8 @@
   background-size: 105%, 71%, 240%;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media  (max-resolution: 767px) and (min-resolution: 144dpi),
+        (max-resolution: 767px) and (min-resolution: 1.5dppx) {
   .page-header__photo {
     background-image: url(../img/bg-intro-triangle-mobile.svg),
                       url(../img/text-sedona-index.svg),
@@ -123,7 +124,7 @@
 }
 
 @media  (min-width: 768px) and (min-resolution: 144dpi),
-  (min-width: 768px) and (min-resolution: 1.5dppx) {
+        (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-header__photo {
       background-image: url(../img/bg-intro-triangle-tablet.svg),
                         url(../img/text-sedona-index.svg),
@@ -170,7 +171,7 @@
 }
 
 @media  (min-width: 1200px) and (min-resolution: 144dpi),
-  (min-width: 1200px) and (min-resolution: 1.5dppx) {
+        (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .page-header__photo {
       background-image: url(../img/bg-intro-triangle-desktop.svg),
                         url(../img/text-sedona-index.svg),

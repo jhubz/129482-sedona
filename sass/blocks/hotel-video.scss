@@ -21,30 +21,6 @@
   width: 280px;
 
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, $gray-dark 40%);
-
-  button {
-    width: 35px;
-    height: 35px;
-    margin-top: 17px;
-    margin-bottom: 16px;
-
-    background-color: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-      .hotel-video-button-fill {
-        fill: #333333;
-      }
-    }
-
-    &:active {
-      .hotel-video-button-fill {
-        fill: #c1c1c1;
-      }
-    }
-  }
 }
 
 .hotel-video__scroll {
@@ -76,6 +52,34 @@
   background-color: $base-bg-color;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.hotel-video__button {
+  width: 35px;
+  height: 35px;
+  margin-top: 17px;
+  margin-bottom: 16px;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    .hotel-video__icon {
+      fill: #333333;
+    }
+  }
+
+  &:active {
+    .hotel-video__icon {
+      fill: #c1c1c1;
+    }
+  }
+}
+
+.hotel-video__icon {
+  fill: #5c6870;
 }
 
 .hotel-video__replay {
@@ -132,6 +136,10 @@
   .hotel-video__scroll-toggle {
     top: 45%;
     left: 32%;
+  }
+
+  .hotel-video__icon {
+    fill: #ffffff;
   }
 
   .hotel-video__replay {
