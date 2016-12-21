@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.min.js" async></script>
+    
   </head>
 
   <body>
@@ -23,7 +29,7 @@
         </nav>
 
         <div class="page-header__nav-controls">
-          <button class="page-header__nav-toggle  page-header__nav-toggle--open" type="button">Открыть меню</button>
+          <button class="page-header__nav-toggle  page-header__nav-toggle--close" type="button">Открыть меню</button>
         </div>
 
         <div class="page-header__logo  page-header__logo--opened-menu">
@@ -177,6 +183,7 @@
 
     </div>
 
+    <script src="js/script.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
 

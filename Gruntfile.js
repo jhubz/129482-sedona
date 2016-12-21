@@ -98,6 +98,13 @@ module.exports = function(grunt) {
           src: ["*.html"],
           dest: "build"
         }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/**/*.js"],
+          dest: "build"
+        }]
       }
     },
 
@@ -125,6 +132,10 @@ module.exports = function(grunt) {
       style: {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
+      },
+      js: {
+        files: ["js/**/*.js"],
+        tasks: ["copy:js"]
       }
     }
   });
