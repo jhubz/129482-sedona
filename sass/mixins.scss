@@ -62,16 +62,16 @@
       position: absolute;
       top: 23px;
       right: 0px;
-      
+
       width: 1px;
       height: 292px;
-      
+
       background-color: #dbdbdb;
     }
   }
-  
+
   @media #{$desktop-widths} {
-  
+
     &::after {
       top: 5px;
       right: -1px;
@@ -89,10 +89,10 @@
       position: absolute;
       top: 50%;
       left: 0;
-      
+
       width: 125px;
       height: 2px;
-      
+
       background-color: #dbdbdb;
     }
 
@@ -101,15 +101,15 @@
       position: absolute;
       top: 50%;
       right: 0;
-      
+
       width: 125px;
       height: 2px;
-      
+
       background-color: #dbdbdb;
     }
   }
   @media #{$desktop-widths} {
-  
+
     &::before {
       width: 280px;
     }
