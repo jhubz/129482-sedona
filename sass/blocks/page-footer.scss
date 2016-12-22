@@ -17,30 +17,34 @@
   padding-top: 10px;
 
   vertical-align: middle;
+}
 
-  a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-left: 2px;
+.page-footer__link-htmlacademy {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 2px;
 
-    font-size: 0;
-    vertical-align: top;
+  font-size: 0;
+  vertical-align: top;
 
-    transform: translate(0, -6px);
+  transform: translate(0, -6px);
 
-    &:hover {
-      .page-footer-copyright-fill {
-        fill: #81b3d2;
-      }
-    }
-
-    &:active {
-      .page-footer-copyright-fill {
-        fill: #b2b2b2;
-      }
+  &:hover {
+    .page-footer__icon-htmlacademy {
+      fill: #81b3d2;
     }
   }
+
+  &:active {
+    .page-footer__icon-htmlacademy {
+      fill: #b2b2b2;
+    }
+  }
+}
+
+.page-footer__icon-htmlacademy {
+  fill: #000000;
 }
 
 /*----------------ПЛАНШЕТ------------------*/

@@ -39,18 +39,18 @@
 
   color: #000000;
   text-decoration: none;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: 0;
+.hotel-photo__icon-like {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
 
-    width: 25px;
-    height: 25px;
+  width: 22px;
+  height: 20px;
 
-    background: url(../img/icon-like.svg) no-repeat 0 -1px;
-  }
+  fill: #b2b2b2;
 }
 
 /*-----------------ПЛАНШЕТ--------------------*/
@@ -107,11 +107,11 @@
     padding-bottom: 6px;
 
     text-align: left;
+  }
 
-    &::before {
-      top: 0;
-      left: 5px;
-    }
+  .hotel-photo__icon-like {
+    top: 0;
+    left: 5px;
   }
 }
 
@@ -156,9 +156,9 @@
     color: $base-bg-color;
     margin-top: 3px;
     padding-bottom: 0;
-
-    &::before {
-      background-image: url(../img/icon-like-desktop.svg);
-    }
   }
+
+  .hotel-photo__icon-like {
+      fill: #ffffff;
+    }
 }

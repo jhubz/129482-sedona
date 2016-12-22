@@ -25,7 +25,7 @@
   cursor: pointer;
 
   &--open {
-    background-image: url(../img/icon-menu.svg);
+    background-image: url(../img/icons/icon-menu.svg);
   }
 
   &--close {
@@ -33,14 +33,20 @@
     top: 2px;
     left: 0;
 
-    background-image: url(../img/icon-cross.svg);
+    background-image: url(../img/icons/icon-cross.svg);
   }
 }
 
 .page-header__logo {
   position: absolute;
-  top: 223px;
   left: 109px;
+
+  width: 102px;
+  height: 83px;
+
+  &--opened-menu {
+    top: 223px;
+  }
 
   &--closed-menu {
     top: 0;
@@ -71,7 +77,8 @@
   background-size: 105%, 71%, 240%;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media  (max-resolution: 767px) and (min-resolution: 144dpi),
+        (max-resolution: 767px) and (min-resolution: 1.5dppx) {
   .page-header__photo {
     background-image: url(../img/bg-intro-triangle-mobile.svg),
                       url(../img/text-sedona-index.svg),
@@ -123,7 +130,7 @@
 }
 
 @media  (min-width: 768px) and (min-resolution: 144dpi),
-  (min-width: 768px) and (min-resolution: 1.5dppx) {
+        (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-header__photo {
       background-image: url(../img/bg-intro-triangle-tablet.svg),
                         url(../img/text-sedona-index.svg),
@@ -141,6 +148,8 @@
 
 @media #{$desktop-widths} {
   .page-header__logo {
+    width: 188px;
+    height: 96px;
     margin-left: 172px;
 
     img {
@@ -154,7 +163,7 @@
                       url(../img/text-sedona-index.svg),
                       url(../img/bg-back-desktop@1x.jpg);
     background-position: center bottom, center 76px, center;
-    background-size: 100%, 39%, cover;
+    background-size: 1203px, 39%, cover;
 
   }
 
@@ -165,12 +174,12 @@
                       url(../img/text-sedona.svg),
                       url(../img/bg-back-desktop@1x.jpg);
     background-position: center bottom, center 102px, 0px -217px;
-    background-size: 100%, 38%, 100%;
+    background-size: 1203px, 38%, 100%;
   }
 }
 
 @media  (min-width: 1200px) and (min-resolution: 144dpi),
-  (min-width: 1200px) and (min-resolution: 1.5dppx) {
+        (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .page-header__photo {
       background-image: url(../img/bg-intro-triangle-desktop.svg),
                         url(../img/text-sedona-index.svg),

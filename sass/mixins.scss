@@ -43,7 +43,7 @@
   }
 }
 
-@mixin container-fluid () {
+@mixin container-fluid() {
   width: auto;
 
   @media #{$tablet-widths} {
@@ -52,4 +52,70 @@
     margin: 0 auto;
   }
 
+}
+
+@mixin right-line() {
+
+  @media #{$tablet-widths} {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 0px;
+
+      width: 1px;
+      height: 292px;
+
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media #{$desktop-widths} {
+
+    &::after {
+      top: 5px;
+      right: -1px;
+
+      height: 292px;
+    }
+  }
+}
+
+@mixin title-lines() {
+
+  @media #{$tablet-widths} {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 125px;
+      height: 2px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 125px;
+      height: 2px;
+
+      background-color: #dbdbdb;
+    }
+  }
+  @media #{$desktop-widths} {
+
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
 }

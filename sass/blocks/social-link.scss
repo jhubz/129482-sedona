@@ -9,14 +9,8 @@
 
   @include btn();
 
-  svg {
-    width: 20px;
-    height: 20px;
-    margin: 13px auto;
-  }
-
   &--tw {
-    svg {
+    .social-link__icon {
       width: 18px;
       height: 18px;
       margin: 14px auto;
@@ -24,7 +18,7 @@
   }
 
   &--fb {
-    svg {
+    .social-link__icon {
       width: 18px;
       height: 18px;
       margin: 14px auto;
@@ -32,8 +26,16 @@
   }
 
   &:active {
-    .social-link-fill {
+    .social-link__icon {
       fill: #88b6d1;
     }
   }
+}
+
+.social-link__icon {
+  width: 20px;
+  height: 20px;
+  margin: 13px auto;
+
+  fill: #ffffff;
 }
