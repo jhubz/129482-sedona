@@ -40,9 +40,20 @@
   margin-bottom: 16px;
 }
 
+.hotel-feature__photo-container {
+  min-height: 260px;
+  height: auto;
+
+  background-color: $add-bg-color;
+}
+
 .hotel-feature__photo {
   width: 320px;
   height: 260px;
+
+  img {
+    display: block;
+  }
 }
 
 /*---------------ПЛАНШЕТ----------------------*/
@@ -52,6 +63,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
 
     border: none;
   }
@@ -89,6 +101,10 @@
 
   .hotel-feature__number {
     margin-bottom: 22px;
+  }
+
+  .hotel-feature__photo-container {
+    min-height: 256px;
   }
 
   .hotel-feature__photo {
@@ -131,7 +147,6 @@
 
   .hotel-feature__photo {
     width: 800px;
-    height: 256px;
 
     overflow: hidden;
 
